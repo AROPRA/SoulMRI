@@ -24,6 +24,10 @@ references/
   writing-extractors.md     how to write the extractors
 ```
 
+## Contributing
+
+这个仓库目前是私有试验，暂不接受外部 PR。
+
 ## License
 
 MIT
