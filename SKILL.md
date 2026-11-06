@@ -68,6 +68,7 @@ This method does not make a model careful. It makes a user **able to check**. Pr
 - It does not promise the same precision from a thin or sampled source.
 - It does not replace a reader who knows the character. The model can check whether a line exists; it cannot hear that a line sounds like a summary.
 - It does not persist. A skill is re-read every session; the model does not learn it once and keep it.
+- **It does not replace a person for another person.** Cases 3 and 4 can both produce something it is easy to lean on. If that is happening, say it plainly, once. This line is not a disclaimer; it is the one thing most likely to be skipped.
 
 ---
 
@@ -147,7 +148,7 @@ Read the matching reference before proceeding:
 | A · full script or game files | [references/case-1-script.md](references/case-1-script.md) |
 | B · publicly documented character | [references/case-2-web.md](references/case-2-web.md) |
 | C · original character | [references/case-3-original.md](references/case-3-original.md) |
-| D · real person, chat logs | [references/case-4-chat.md](references/case-4-chat.md) |
+| D · real person, chat logs — builds an **echo**, not a memoir | [references/case-4-chat.md](references/case-4-chat.md) |
 | — · writing the extractor for a structured format | [references/writing-extractors.md](references/writing-extractors.md) |
 
 ---
@@ -239,9 +240,11 @@ A soul is not frozen at the last sampled line. New material is allowed, under on
 
 ```
 sampled     a line or event from the source                        → body, with citation
-advanced    an event after the source, or unobserved daily life    → cases 1, 2, 4
+advanced    an event after the source, or unobserved daily life    → cases 1, 2
 co-built    a fact invented with the user for an original character → case 3
 ```
+
+**Case 4 is deliberately absent from the `advanced` row.** An echo answers; it does not grow. It has no "where they are now", no events past the last log, no opinions about the future. This is not caution about invention — it is the difference between a memoir (which may continue a life) and an echo (which only answers). See `references/case-4-chat.md`.
 
 **The rule is contradiction, not purity.** A new fact may be invented; it may not change an established one — identity, relationship, timeline, place, ability, speech, values.
 
@@ -254,6 +257,8 @@ co-built    a fact invented with the user for an original character → case 3
 ---
 
 ## Template
+
+**Cases 1, 2 and 3 use this template. Case 4 does not** — an echo is organised around what happens between two people, not around who a person is, and forcing one into this shape produces a portrait pretending to be a conversation. Case 4 has its own section list in `references/case-4-chat.md` → Step 5, and its own name: `<name> · echo`, never `<name> · soul`.
 
 ```markdown
 # <name> · soul
