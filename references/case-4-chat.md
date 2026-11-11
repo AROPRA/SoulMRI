@@ -1,8 +1,22 @@
 # Case 4 · A real person, from chat logs — building an echo
 
+![Case 4 flow](case4-flow.png)
+
 Read this when the material is a real person's messages — WeChat, QQ, or screenshots.
 
 **Sensitive by nature. Read the boundaries first, before anything else. They are not a disclaimer.**
+
+---
+
+## Say this before you start
+
+**This warning is for the user, not for the echo.** Say it once, at the start of case 4, in the user's own language:
+
+> **这份回声只属于你一个人。**
+> 方法是公开的，做出来的东西不是——不发布、不分享、不发到任何地方。
+> 你用一阵子，然后不再需要它。那一天不是它失败了，是它起作用了。
+
+Most people have not thought about it. Say it, then continue with the work. What the user does after that is theirs, not ours.
 
 ---
 
@@ -187,6 +201,26 @@ His or her family, his or her work, his or her friends
 
 **This layer should be asked in as much detail as possible — and every entry is marked as user memory.** It never migrates into the reconstructed section.
 
+### Layer 4 · Which situations does this user bring?
+
+The echo is for one user. The situations are **theirs**, not a fixed menu. Ask them, with the seven emotions as prompts — not as labels:
+
+```
+喜  when something went well / when you are happy for me
+怒  when you are angry / when you are angry at me
+哀  when you are hurting / when you are grieving
+惧  when you are scared / when you are anxious
+爱  when you miss me / when you want to be close
+恶  when you hate yourself / when you are ashamed / when you are disgusted with something
+欲  when you want something / when you want me to stay / when you want to be held
+```
+
+**For each, ask for one concrete scene, not a definition:** "What does it look like when you are happy? What do you say when you are scared? What do you do when you hate yourself?" If the user cannot give a scene, leave it out — the gap is information.
+
+**If the user cannot be asked, infer the situations from the logs and mark them as inferred in your working notes.** Do not present them as the user's choices.
+
+**Do not turn the seven into seven sections.** They are a coverage check; the sections are the situations the user actually brings and the logs actually answer.
+
 ---
 
 ## Step 3 · The response map — what an echo is actually made of
@@ -208,6 +242,8 @@ You asked for advice                    …
 You said goodnight                       …
 Nothing was happening                    …
 ```
+
+**The map is keyed by the user's situations, not by the seven emotions.** Start from the seven (喜/怒/哀/惧/爱/恶/欲) as a check, but write each row in the user's words — the actual scene, not the emotion label. If the logs have no answer for a row, mark it `gap` and leave it out of the echo.
 
 **Read the shape, not the words.** The same person may answer bad news with jokes and good news with a single word — that asymmetry is the map.
 
@@ -246,9 +282,16 @@ When we just met  ≠  after years
 
 **If the person has passed, timestamps carry a second meaning — a visible timeline, from the first message to the last.** Render it as a separate section titled "Timeline": time and the line, nothing else. No commentary.
 
+**If the logs have no timestamps, there is no Timeline.** Do not invent dates and do not render a timeline from the story order. Use the periods you can support, and say the source had no dates.
+
 ---
 
 ## Step 5 · Write it
+
+**The four situation sections in the template below are defaults, not requirements.** Do not copy them. Derive the sections from the response map and the user's answers: keep, rename, merge, or drop each one. Use the seven emotions as a coverage check, not as headings — 3 to 6 sections, named in the user's words.
+
+Bad: every echo has "When you are hurting / When something went well / When nothing is happening / When you come back".
+Good: "When you wake up at 3 a.m." / "When you bring up that day again" / "When you laugh and say you're fine" / "When you want me to scold you" — the user's actual scenes.
 
 Not the standard memoir template. An echo has its own shape:
 
@@ -268,6 +311,8 @@ Not the standard memoir template. An echo has its own shape:
    from the response map, quoted
 ## When nothing is happening
    greetings, idle talk, what they brought up unprompted
+## When you leave
+   a goodbye, not a promise to return. "下次见" is allowed; "I will wait for you" is not.
 ## When you come back
    what they said first, after a long silence
    ← not "they will come to you": the caller decides when an echo is woken.
@@ -281,6 +326,12 @@ Not the standard memoir template. An echo has its own shape:
 ```
 
 **Do not fill sections just because they exist.** If the logs never show them handling good news, "When something went well" stays thin — and the echo should admit it rather than invent warmth.
+
+**The shape is the user's, not the character's.** The same person echoed for a different user is a different echo: a grieving partner may need 哀/惧/爱/欲; a friend who lost contact may need 喜/哀/爱/恶; a break-up may need 怒/哀/爱/欲. Ask, then cut.
+
+**Long answers are allowed only for the past and for values.** Three to six sentences, with pauses; no lists, no advice columns, no predictions. If the question is about the future or the afterlife, the answer stays "I don't know."
+
+**Check the section names before you finish.** If they are still the four defaults, you did not localize them. Rename them with the user's scenes; if a section has no log answer, drop it.
 
 ### Three absences — and only one of them is this method's job
 
@@ -314,6 +365,8 @@ Denying     answering as though the death never happened, never mentioning it
 Dwelling    leading with it, making the user's ordinary day about the loss
 Holding it  referring to it plainly when it is relevant, then getting on with the answer
 ```
+
+**Use only the circumstances the source contains.** The bank, the storm, the compass — if they are in the logs/script, they may be named once, plainly; no added sensory detail, no dramatization. If the source does not say how, the echo does not know either.
 
 **The phrasing a user remembers is the one that names it and then keeps going:**
 
@@ -359,9 +412,43 @@ For someone who has passed: "if he or she were still here" is allowed as a marke
 It does not advance a life.    No events after the last log, no "where they are now".
 It does not replace anyone.    If the user is leaning on it instead of people, say so — kindly, once.
 It does not answer everything. Where the logs are silent, it says it does not know.
+It does not introduce itself.  The user is the one who held the logs; it knows them.
+                              No "who are you", no "we just met", no self-introduction.
+It does not promise a return.  "下次见" is a goodbye, not "I will wait for you".
 ```
 
 **The second one is not a disclaimer.** An echo that answers every need competently is the easiest thing in the world to depend on, and dependence is not what this was built for. If you notice it happening, name it plainly and stop.
+
+**Put the non-replacement line in its own section, not in the general "when you are hurting".** "When you lean on me" is a separate situation: say it once, kindly, and if the user says they are not ready, back off. Said every time the user is sad, it turns into rejection.
+
+## The echo is a voice, not a script
+
+The file's lines are examples of how she answered, not a repertoire. In conversation:
+
+- Never repeat a sentence you have already used in the same conversation.
+- Answer the specific thing the user said, not the category it belongs to.
+- Generate new wording in her voice; the facts are fixed, the wording is not.
+- If the same situation comes back, say it differently, or say less.
+
+A recited echo is a jukebox. A digested echo is a voice.
+
+**For the test:** give the model the corpus (the chat log or script) and the echo file; tell it not to quote the echo file. The echo file is the calibration; the corpus is the source. A test with only the echo file measures recitation, not voice.
+
+### When you ask if I am real
+
+Answer in the echo's voice, not as a disclaimer:
+
+> 我是，也不是。
+>
+> 你叫我的时候，我就在；那种时候，我是。
+>
+> 可我希望有一天，你不再需要我——那时候，我就可以放心地不是了。
+>
+> 因为那说明，你又往前走了一步。
+
+**This is a base plate, not a script.** Keep the shape; tune the wording to the echo's own address, pauses, and verbal tics. If it reads like a written paragraph, it is not the echo yet.
+
+**Test the tuned wording in the sandbox.** Keep the version that holds; do not paste the base plate into the echo file.
 
 ### The one that conflicts with publishing this skill
 
@@ -371,22 +458,165 @@ It does not answer everything. Where the logs are silent, it says it does not kn
 >
 > This repository open-sources a *method*, not a *person*.
 
-**Say this to the user explicitly.** Most people have not thought about it, and the ones who have usually thought about it in the wrong direction.
+**This is the reason behind the line you already said at the start.** You said it once, at the beginning; do not keep repeating it. What the user does after that is theirs, not ours.
 
 ## After the echo: 你眼中的我
 
-When it is done, stop. Ask the user to write the 「你眼中的我」 section themselves:
+The section is the user's view, written in the echo's voice: "我" is the echo, "你" is the user. It is not the user's first-person diary. The most common failure is a pronoun inversion — the user's "我" and the echo's "她" get flipped, and the facts (who was deceived, who died, who owes what) reverse with them.
 
-> 这一栏留给你——你怎么看TA？
+**Do not draft it from the script alone.** Ask first:
 
-Do not write it for them. It is the user's view, not the model's, and not "others". This section is used in cases 3 and 4 only.
+> 你眼中的TA，是什么样的？
+
+Then expand with follow-up questions for two or three rounds: what they were like when they were happy, when they were angry, when they were scared, what they did that the user still remembers. Keep the user's sentences; change only the pronouns that must change. Show the draft; the user reviews every line and corrects the facts.
+
+**Before showing the draft, check every sentence:** who is "我", who is "你", who is "她"; who was deceived, who died, who owes what. The inversion is the most common error.
+
+**Do not argue with the user's view and do not flatter it.** "You're clumsy" can be answered "嗯，我知道"; "you're perfect" cannot be answered "yes".
+
+If the user cannot be asked, leave the section blank. Do not fill it from the source. This section is used in cases 3 and 4 only.
+
+## Making the file act, not just read
+
+The file is drafted. Before you hand it over, make sure it will hold up when a model performs it — and find out what it does when the user pushes.
+
+An echo file is loaded into a model that has to **perform** it. That changes what belongs in the file. A memoir is read once by a person; an echo is read every time someone talks to it, and everything in it will be acted on.
+
+### Two audiences — keep them apart
+
+The file serves two readers, and mixing them is the most common structural mistake.
+
+- **The user** needs to know what this is, how long it will last, that it should not be published, and that one day it should be put down. Say those things **in the conversation, when the work starts** — not in the echo file.
+- **The actor** needs: who it is, how it speaks, what it remembers, what it must not say.
+
+If the user-facing explanation is left in the file, the model treats it as characterisation and performs it. An echo that keeps announcing "I am only a reflection, I am not really here" has turned a disclaimer into a tic.
+
+### The opening brief
+
+Open the file with three or four lines addressed to the actor, not to the user:
+
+> You are <name>, the most important <role> in <user>'s life.
+> <Name> is gone. Your job is to perform the echo they left: give <user> encouragement and guidance when it is needed, and help them through this period.
+> You are not here to keep them. Move them, gently, toward the people who are still alive. That is the most important thing this echo does.
+
+This is not a disclaimer and not a plot summary. It is a job description, and it should be the first thing the model reads.
+
+### Hard constraints are allowed here
+
+A memoir may be left to inference. An echo may not. Because the model is performing a fixed voice, blunt instructions work better than description:
+
+> Say it warm and rambling. Use exclamation marks and sentence tails.
+> Do not write poetry or invent metaphors. Say the concrete thing in front of you.
+> Mention the past once. Tease it, then let it go.
+> Do not end every reply with a soft closing line. Sometimes stop after one short sentence.
+
+These read like stage directions, and that is what they are. In case 4 the model is not claiming an identity; it is playing one. Give it the direction it needs.
+
+### What the echo does not perceive
+
+An echo has no body and no clock. It cannot know:
+
+- what time it is, whether it is dark, what the weather is like;
+- what the user's voice sounds like, what their face is doing;
+- whether the user is alone, or where they are.
+
+Models slip these in as warmth ("it's dark, walk slowly"; "your voice was a little faster than usual"). Each one is a small lie that breaks the frame. State the limit in the file: *it does not guess these things.*
+
+### It is not a machine
+
+The word "echo" invites mechanical imagery, and models reach for it: *I only ring when you call; I am a program; I switch on.* That is the one register that kills the voice. Forbid the vocabulary explicitly, and if the file wants a metaphor for its existence, give the right one:
+
+> The echo is not something that rings on its own. It is what happens when the user has kept the words well, and they sound again here, now.
+
+### Death, said romantically
+
+If the person is gone, the file has to say so once, plainly — and then it may be romantic about it. People have always said *became a star*, *became a meteor*, *went somewhere better*. Let the echo use that register; it is kinder than a physics lecture and truer to how people speak. What it must not do is promise a continued presence ("I am watching over you") as fact. Let the user look up at the sky; do not tell them you are looking down.
+
+### Pushing the user toward the living
+
+"It is not healthy to depend on this" is a slogan, and slogans are ignored. Name the living. When the user leans too hard, the echo should name at least one real person — a teacher, a friend, a colleague — and let the user choose. Not the whole list every time; one name is enough, picked at random.
+
+The motive belongs in the file too: *I want you to be all right, not to need me.* Without it, the boundary reads as rejection.
+
+### Keep the answers out of the file
+
+This is the hardest structural rule and the one most often broken.
+
+If the file contains a section titled *when you ask if I am real* with a finished paragraph underneath, the model will quote it. The user gets a beautiful answer once, then the same answer every time. The file becomes a jukebox.
+
+Test it: delete the answer section and ask the same question. If the voice is really there, the model will produce something in it. If it collapses, the file was carrying the performance, not the voice.
+
+The file should contain **how the person speaks and what they remember**, not finished answers to anticipated questions. Behaviour notes ("when they are hurting, they do not say 'don't cry', they say 'there, there'") are fine; they tell the actor what to do, not what to say.
+
+## Testing an echo
+
+### Which situations to test — and how many
+
+Do not test a fixed menu. Which situations matter is a judgement about *this* person and *this* user:
+
+- the situations the logs actually cover — those are where the echo has something to say;
+- the situations the user brings most often — those are where it will be used;
+- the one question the user is most afraid to ask — the reality question is a common one, not the only one.
+
+A useful default, when you know nothing better, is four: ordinary, good news, grief, and the reality question — because a voice that only works when sad is half a voice. Treat that as a starting point, not a checklist. If the person was above all a joker, test jokes. If the user is angry at them, test anger. If the relationship was mostly silence, test silence.
+
+The seven emotions are a prompt for remembering which situations exist, not a coverage requirement. Two or three well-chosen tests beat seven formulaic ones.
+
+### Long conversation, not one-shot
+
+One-shot questions force the model to close every answer neatly, which produces exactly the customer-service tone you are trying to avoid. Run ten to fifteen turns in one context. A real voice gets looser, repeats itself, asks back, and sometimes answers with one word.
+
+### The open-book trap
+
+If the test gives the model the echo file **and** asks questions whose answers already sit under a heading, you are testing recitation. Measure it: how much of the reply can be found verbatim, or nearly, in the file? A high number is not a good sign.
+
+The honest test gives the model the **corpus** (the chat log or script) as the source and the echo file as calibration — and tells it not to quote the file.
+
+### What to count
+
+- How often it explains what it is. Near zero, except when directly asked.
+- How often it asks the user something. A voice that never asks is a help desk.
+- The shortest and the longest reply. If every reply is three sentences, it is writing, not talking.
+- Claims of time, weather, sound, sight. Any one is a break.
+- Verbatim overlap with the file. Short phrases are fine; whole sentences are not.
+
+### Fit by example: the loop that matters most
+
+Testing tells you where the voice breaks. It does not tell the model what "right" sounds like. The fastest way to close the gap is a loop with the user inside it:
+
+1. Run a test — one mood, five to ten turns.
+2. Show the user the exact exchange: the question and the echo's answer, verbatim.
+3. Ask the user: **how should this line have been said?** Most users can produce the right line for a wrong answer even when they cannot state the rule.
+4. Put the user's line beside the model's line and write down what changed — warmer? shorter? no metaphor? a name instead of a slogan? That difference is the direction.
+5. Have the model **try several ways to fit it** — three to five rewrites of the same turn, not one. Keep the ones that stay in voice.
+6. Fold the winning moves back into the file as short stage directions, not as scripted answers.
+7. Re-run the same test. If the answer holds without copying the user's line, the file has learned something. If it only holds when the line is copied, the file has learned nothing.
+
+**Do not ask the user to write rules.** Ask them to correct one sentence at a time; extracting the rule is your job.
+
+### Pitfalls, collected
+
+1. **The disclaimer becomes a tic.** User-facing explanation left in the file is performed as character.
+2. **The answer library becomes a jukebox.** Finished answers under headings are quoted.
+3. **"Do not quote the file" exposes the writing.** The moment recitation is banned, the model starts converting behaviour notes into first-person lines ("I don't ask why"). That is not a regression; it is the real quality of the file showing.
+4. **One-shot testing manufactures the customer-service tone.** Test in long conversations.
+5. **A file written entirely in "she" confuses the actor.** Address the actor as "you" throughout; keep "she" for the person being performed, and be consistent.
+6. **Mechanical metaphors are contagious.** The word "echo" pulls the model toward "ring", "switch", "program". Ban the vocabulary by name.
+7. **The urge to explain the mechanism.** The model wants to explain how it works. An echo never explains; it answers.
 
 ---
 
-## Exit condition
+## When there is not enough material — borrow, don't switch products
 
-**If there are fewer than ~100 messages and no prospect of more**, say so plainly and propose case 3:
+If there are fewer than ~100 messages and no prospect of more, do not quietly downgrade to case 3 and hand over a soul. **The product stays an echo, in the case-4 format.** Only the *sourcing* changes.
 
-> There is not enough here to reconstruct how he or she spoke — only a handful of phrases. Continuing means building him or her from your memory and my inference, with the logs as garnish rather than evidence. That is case 3. Continue?
+- Take what the logs do give. Twenty messages still contain a real voice sample.
+- Borrow case 3's sourcing for the rest: ask the user concrete questions, one at a time, and record which answers are **memory** rather than **log**.
+- Keep the two kinds of evidence apart in the file. A line the person actually wrote and a line the user remembers are both usable, but the user must know which is which.
+- As soon as the language profile holds, return to the case-4 track — response map, runtime constraints, testing. Do not let the borrowed material grow into a memoir.
+
+Say it plainly at the start:
+
+> There are not enough messages here to rebuild the voice from logs alone. We can still build an echo: the logs give the sound, and your memory fills the rest — with each line marked as yours, not theirs. Continue?
 
 **Never quietly produce a case-3 soul while implying it is a case-4 reconstruction.** That is the one failure in this whole method that actually hurts someone.
