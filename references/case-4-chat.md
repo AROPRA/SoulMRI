@@ -102,7 +102,7 @@ Not built for  anyone else — it will not fit, and that is correct
 
 The last one is the one that actually hurts. **The absence of a side is protection, not incompleteness.**
 
-**Write the scope down, in the soul itself:** whose view this is, over what period, for whom. A reader should know at a glance which window they are looking through.
+**Write the scope down, in the echo itself:** whose view this is, over what period, for whom. A reader should know at a glance which window they are looking through.
 
 ---
 
@@ -454,7 +454,7 @@ Answer in the echo's voice, not as a disclaimer:
 
 > **The method may be public. The output may not.**
 >
-> A soul built from a real person's chat logs is for the person who built it. It is not published, shared, or posted anywhere.
+> An echo built from a real person's chat logs is for the person who built it. It is not published, shared, or posted anywhere.
 >
 > This repository open-sources a *method*, not a *person*.
 
