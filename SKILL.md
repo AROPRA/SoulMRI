@@ -400,11 +400,15 @@ Only the user's acceptance of the sandbox result closes the loop.
 
 **The trigger.** The user has pointed at the same place three times and it still reads wrong. Stop rewriting blind. A fourth "not quite" teaches the model nothing — it does not know what "right" sounds like.
 
-**Ask for a batch of single lines — not a rewrite, and not one line at a time.**
+**The material is the test, not the draft.** Run the sandbox test first — or use the run you already have — and lay out the exchanges: the question, then the answer the model gave. The user judges those answers. "This one doesn't sound like her" is far easier to say about an answer than about a line in a document, and every rejected answer points back at the line or rule that produced it.
 
-Bring **five to fifteen failing lines at once**, each with the model's version and a blank under it. The user writes one sentence per item: "this is how it should have been said." Not a paragraph, not a scene rewrite — one line per row.
+**Let the user choose which answers are wrong.** Do not pre-select for them. The judgement is theirs; tracing each rejected answer back to its source line is the model's job.
 
-> 这里有十几句，都是我觉得不像的。每句下面留了空，您挑想改的写一句：如果让您来写，这句会怎么说？不用整段，一句就行。
+**Then ask for a batch of single lines — not a rewrite, and not one line at a time.**
+
+Take the rejected answers, five to fifteen of them, and put the model's version of each with a blank under it. The user writes one sentence per item: "this is how it should have been said." Not a paragraph, not a scene rewrite — one line per row.
+
+> 下面是刚才沙箱里的十几条回答。您觉得不像的，在每句下面写一句：如果让您来写，这句会怎么说？不用整段，一句就行。
 
 **Why a batch.** One line per turn means five round-trips for five sentences, and the user has to reload the context each time. Five to fifteen lines is one sitting and costs the user ten or fifteen minutes — that is the real price of this step, and it is worth paying once instead of five times. If the user only wants to correct two, take two; but do not ask for one.
 
