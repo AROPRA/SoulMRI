@@ -400,9 +400,13 @@ Only the user's acceptance of the sandbox result closes the loop.
 
 **The trigger.** The user has pointed at the same place three times and it still reads wrong. Stop rewriting blind. A fourth "not quite" teaches the model nothing — it does not know what "right" sounds like.
 
-**Ask for one line, not a rewrite:**
+**Ask for a batch of single lines — not a rewrite, and not one line at a time.**
 
-> 这一句，如果让你来写，你会怎么写？（一句就够，不用整段）
+Bring **five to fifteen failing lines at once**, each with the model's version and a blank under it. The user writes one sentence per item: "this is how it should have been said." Not a paragraph, not a scene rewrite — one line per row.
+
+> 这里有十几句，都是我觉得不像的。每句下面留了空，您挑想改的写一句：如果让您来写，这句会怎么说？不用整段，一句就行。
+
+**Why a batch.** One line per turn means five round-trips for five sentences, and the user has to reload the context each time. Five to fifteen lines is one sitting and costs the user ten or fifteen minutes — that is the real price of this step, and it is worth paying once instead of five times. If the user only wants to correct two, take two; but do not ask for one.
 
 **What it is.** A **calibration sample** — given to the model that is writing, never entered into the file. The rule for the body does not change:
 
@@ -412,7 +416,7 @@ into the body    only the source's words (cases 1, 2), the user's own words (cas
 into the notes   the sample, and the difference between it and the model's line
 ```
 
-**How to use it.** Put the user's line beside the model's line and read the difference out loud — warmer, shorter, no explanation, a name instead of a slogan. That difference is the direction. Have the model rewrite the same turn three to five ways against it, not once; keep the ones that stay in voice, and let the user pick.
+**How to use it.** Put each sample beside the model's line and read the difference out loud — warmer, shorter, no explanation, a name instead of a slogan. That difference is the direction. Have the model rewrite each turn three to five ways against its own sample, not once; keep the ones that stay in voice, and let the user pick.
 
 **What survives is the move, not the line.** Fold the winning difference back as a short stage direction — "no explanations", "cut the last sentence", "she answers with a name, not an offer". The sample is a reference, not a quotation: it never appears in the file, and the final check is whether the model can produce an equivalent line **without** it.
 
