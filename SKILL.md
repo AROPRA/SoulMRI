@@ -396,6 +396,32 @@ Only the user's acceptance of the sandbox result closes the loop.
 
 ---
 
+## When three rounds do not land — a calibration sample
+
+**The trigger.** The user has pointed at the same place three times and it still reads wrong. Stop rewriting blind. A fourth "not quite" teaches the model nothing — it does not know what "right" sounds like.
+
+**Ask for one line, not a rewrite:**
+
+> 这一句，如果让你来写，你会怎么写？（一句就够，不用整段）
+
+**What it is.** A **calibration sample** — given to the model that is writing, never entered into the file. The rule for the body does not change:
+
+```
+into the body    only the source's words (cases 1, 2), the user's own words (case 3),
+                 or a line the user remembers, marked as memory (case 4)
+into the notes   the sample, and the difference between it and the model's line
+```
+
+**How to use it.** Put the user's line beside the model's line and read the difference out loud — warmer, shorter, no explanation, a name instead of a slogan. That difference is the direction. Have the model rewrite the same turn three to five ways against it, not once; keep the ones that stay in voice, and let the user pick.
+
+**What survives is the move, not the line.** Fold the winning difference back as a short stage direction — "no explanations", "cut the last sentence", "she answers with a name, not an offer". The sample is a reference, not a quotation: it never appears in the file, and the final check is whether the model can produce an equivalent line **without** it.
+
+**Case 4 does this by default** (see `references/case-4-chat.md` → Fit by example), with the user's memory as the source of the sample. The same loop now applies to cases 1–3, under the boundary above.
+
+**Never let a sample become a quote.** Once it is written into the body it is indistinguishable from evidence, and the file's audit trail is gone for good. If a sample is too good to lose, find out where it came from — the source, the user's words, or the user's memory — and file it under that heading, marked.
+
+---
+
 ## Verification
 
 Three self-checks, each answerable by pointing at the source:
