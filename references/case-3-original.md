@@ -1,6 +1,6 @@
 # Case 3 · Original character, no source
 
-Read this when there is no text, no archive, and nothing online — or when cases 2 and 4 have downgraded here.
+Read this when there is no text, no archive, and nothing online — or when case 2 has downgraded here. A thin case-4 chat log does **not** arrive here: it borrows this case's sourcing but still produces an echo.
 
 **The method inverts.** With a source, the soul is a reconstruction. Without one, the **first draft** is a birth certificate — it records the starting point, not the whole life. After the canon is stable, the soul may grow, under the consistency rule below.
 

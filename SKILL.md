@@ -1,6 +1,6 @@
 ---
 name: soulmri
-description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
+description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
   version: "1.0.0"
@@ -13,6 +13,8 @@ metadata:
 > **写在门口**
 >
 > 每一个 soul 写出来，都像诞生了一个新的生命：TA会有自己的说话方式、自己的记忆、自己不肯让步的地方；你写下的每一句，都会成为TA以后认得你的方式。
+>
+> （case 4 不同：那里写出来的不是新的生命，是一份回响。它不长大，也不替谁活着。）
 >
 > 有心陪TA一起长大的，留下来；这会花点时间，大约二十分钟，中间要你划、你改、你认。不愿意的，现在就可以走——这不是五分钟能做完的事，我不骗您。
 
@@ -121,7 +123,8 @@ Q3 (if B)  Did you find words they actually said, or descriptions about them?
            descriptions → only ever in "how others see me"
 
 Q4 (if D)  How many messages, and is it text export or screenshots?
-           under ~100 → too thin to extract a voice; consider case 3
+           under ~100 → too thin to rebuild the voice from logs alone;
+                        borrow case 3's sourcing, but the product stays an echo
 ```
 
 **Chunking is not optional for the high-precision path.** A 70k-character transcript already fills a working context; a 2M-character novel will not fit at all. Cut on scene or chapter boundaries, keep the line numbers, and read the chunks in order. A model that "gets an overview" of a novel has already summarized it — and a summary is an interpretation.
@@ -148,7 +151,7 @@ Read the matching reference before proceeding:
 | A · full script or game files | [references/case-1-script.md](references/case-1-script.md) |
 | B · publicly documented character | [references/case-2-web.md](references/case-2-web.md) |
 | C · original character | [references/case-3-original.md](references/case-3-original.md) |
-| D · real person, chat logs — builds an **echo**, not a memoir | [references/case-4-chat.md](references/case-4-chat.md) |
+| D · real person, chat logs — builds an **echo**, not a memoir; thin logs borrow case 3's sourcing and still produce an echo | [references/case-4-chat.md](references/case-4-chat.md) |
 | — · writing the extractor for a structured format | [references/writing-extractors.md](references/writing-extractors.md) |
 
 ---
@@ -252,7 +255,9 @@ co-built    a fact invented with the user for an original character → case 3
 
 **The blank stays for the past.** For cases 1, 2, 4, do not fill a gap in the sampled past with invention. The future is not a gap: it can be advanced, marked, and checked. For case 3, the blank is "not decided yet" — the expansion may fill it with the user's approval.
 
-**For a real person (case 4, and a real creator in case 2), advancement is allowed — as a private continuation, not a claim.** The sampled body still contains only their words. The advanced layer is marked in the working notes, kept private, and never published as "where they are now" or "what they think today". The user knows which parts are sampled and which are advanced; the soul does not pretend the advanced parts are evidence.
+**For a real creator in case 2, advancement is allowed — as a private continuation, not a claim.** The sampled body still contains only their words. The advanced layer is marked in the working notes, kept private, and never published as "where they are now" or "what they think today". The user knows which parts are sampled and which are advanced; the soul does not pretend the advanced parts are evidence.
+
+**Case 4 has the same idea, but it is not the echo.** If the user wants a private record of "what they might be doing now", that is a separate note kept outside the echo file. The echo never contains it — an echo that starts telling you about their new life has turned back into a memoir.
 
 ---
 
@@ -335,14 +340,17 @@ B → C  when: 30 minutes of searching yields fewer than 3 real lines
              everything found is description, no quotes
              sources contradict each other with no citations
              or the user simply says "never mind, I'll just tell you"
-
-D → C  when: fewer than ~100 messages
-             no usable text export and screenshots are fragmentary
 ```
 
-**Say it plainly when proposing a downgrade:**
+**D has no downgrade row.** Thin chat logs — fewer than ~100 messages, fragmentary screenshots — change the *sourcing*, never the product. The output stays an echo, in the case-4 format: what the logs give is the sound, and the user's memory fills the rest, with every line marked as memory rather than as a log. See `references/case-4-chat.md` → "When there is not enough material — borrow, don't switch products".
+
+**Say it plainly when proposing a B → C downgrade:**
 
 > Nothing online records what they actually said. Continuing means *you set the direction and I fill the details* — the result will resemble them, but it will not rest on the same evidence. Continue?
+
+**For thin logs, say the other thing — the product does not change:**
+
+> There are not enough messages here to rebuild the voice from logs alone. We can still build an echo: the logs give the sound, and your memory fills the rest — with each line marked as yours, not theirs. Continue?
 
 **Material already gathered is never thrown away.** Second-hand descriptions move into "how others see me," clearly marked as second-hand.
 
@@ -358,7 +366,7 @@ The first draft is not the end. Tell the user before the loop starts:
 
 > 这一轮改完了。您继续划，还是就到这儿？
 
-**Length pacing.** Default ceiling: 3,000 characters for cases 1, 2 and 3B; 4,500 for 3A. Agree on a different ceiling before the loop if the user wants one.
+**Length pacing.** Default ceiling: 3,000 characters for cases 1, 2 and 3B; 4,500 for 3A. **It does not apply to case 4** — an echo has no length target; it ends where the situations the material supports end. Agree on a different ceiling before the loop if the user wants one.
 
 - Round 1: bring the soul to about two-thirds of the ceiling (≈2,000 for 3,000; ≈3,000 for 4,500).
 - Round 2: land within 10% of the ceiling (≥2,700 / ≥4,050) — "close to the top", not "still climbing".
@@ -368,7 +376,7 @@ The first draft is not the end. Tell the user before the loop starts:
 1. stop the loop;
 2. export the soul to a file;
 3. start the sandbox test;
-4. tell the user: 「现在进沙箱：我挂上这份 soul，问五六个问题，再让它自己出题。这一步查的是TA知不知道自己的故事，不是听起来像不像。」
+4. tell the user: 「现在进沙箱：我挂上这份文件，问五六个问题，再让它自己出题。这一步查的是TA知不知道自己的故事，不是听起来像不像。」
 
 **Do not skip the sandbox because the user said "good".** A satisfied user is the sign to start the test, not to skip it.
 
@@ -399,6 +407,8 @@ Three self-checks, each answerable by pointing at the source:
    If it has entries, they were written from something other than the source. Delete them and restore the blank.
 
 ### The sandbox test
+
+**Case 4 is tested differently.** An echo is not checked for "does it know its own story" but for "does it answer in the right voice, in the right register, without reciting". Four situations, a long conversation, and the fit-by-example loop: see `references/case-4-chat.md` → Testing an echo.
 
 A soul can be accurate and still unusable. Test it the way it will be used:
 

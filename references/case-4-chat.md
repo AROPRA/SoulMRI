@@ -1,7 +1,5 @@
 # Case 4 · A real person, from chat logs — building an echo
 
-![Case 4 flow](case4-flow.png)
-
 Read this when the material is a real person's messages — WeChat, QQ, or screenshots.
 
 **Sensitive by nature. Read the boundaries first, before anything else. They are not a disclaimer.**
@@ -53,8 +51,8 @@ A soul is written to be read and kept. An echo is written to be talked to and, o
 
 The one-line description that belongs at the top of the file, and that the user should read before using it:
 
-> **一份由思念和现代技术大模型共同震荡出来的回响。**
-> 不营造「还在」的假想，是为了记住，回忆，与前行。
+> **一份由思念和现代大模型技术共同振荡出来的回响。**
+> 不营造「还在」的假象，是为了记住，回忆，与前行。
 
 ### ② Its lifetime is short by design — say so
 
@@ -131,13 +129,15 @@ Supplied        (user memory, labelled)        personality, history, life outsid
 ## Step 0 · Is there enough material?
 
 ```
-under ~100 messages    → cannot extract a voice; only a few catchphrases
-                         propose case 3 (downgrade)
+under ~100 messages    → cannot rebuild the voice from logs alone; borrow case 3's
+                         sourcing for the rest, but the product is still an echo
 100 – 1,000            → voice extractable; life coverage very thin
 over 1,000             → usable; can also chart how his or her speech changed over time
 ```
 
 **Ask this before spending any time.** Otherwise you discover the ceiling halfway through.
+
+**Thin logs are not a different product.** What changes is where the material comes from — the user's answers fill the gaps, each marked as memory. The format stays the case-4 format, the name stays `<name> · echo`. See the last section, "When there is not enough material".
 
 ### Screenshots specifically
 
