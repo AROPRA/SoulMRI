@@ -70,6 +70,7 @@ This method does not make a model careful. It makes a user **able to check**. Pr
 - It does not promise the same precision from a thin or sampled source.
 - It does not replace a reader who knows the character. The model can check whether a line exists; it cannot hear that a line sounds like a summary.
 - It does not persist. A skill is re-read every session; the model does not learn it once and keep it.
+- **It ships no scripts.** Not an extractor, not a diagram generator, not a test harness. A script works for one file and fails silently for the rest; the method says what the script must do and leaves writing it to the work at hand.
 - **It does not replace a person for another person.** Cases 3 and 4 can both produce something it is easy to lean on. If that is happening, say it plainly, once. This line is not a disclaimer; it is the one thing most likely to be skipped.
 
 ---
