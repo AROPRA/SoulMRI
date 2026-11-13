@@ -24,7 +24,7 @@ Manga only?          images, little text; OCR is expensive → stay in case 2
 
 ## The governing rule
 
-Every source online falls into one of three classes. Keep them apart or the result is worthless:
+Every source online falls into one of four classes. Keep them apart or the result is worthless:
 
 ```
 Original words     what he or she actually said, or the official script   → body text only
