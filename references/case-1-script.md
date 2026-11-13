@@ -42,6 +42,17 @@ Does this file know, per line, who spoke it, where the scene begins, and where t
 A known work usually has its text online — a script dump, the novel itself, a subtitle file, an
 extracted game text. **Look for it before asking the user to.**
 
+**Found, not acquired.** Never download, install or launch the game; never run SteamCMD, a store
+client or a mirror downloader; never unpack a copy the user does not hold. Those end with a game on
+disk, not with lines. What you want is a page that already holds the text — and if none does, stop:
+
+> I could not find the text of this work online. The copy you would need is not something I can
+> obtain, so the honest options are to pick another work, or build them from what you remember
+> (case 3), and I will mark every line as yours rather than theirs.
+
+**Do not invent an acquisition path.** "Download the game first" is not a step of this method; it is
+the point where the method is supposed to stop and say so.
+
 **Judge it by reading a page, not by its name:**
 
 ```
@@ -59,6 +70,8 @@ used — it tells you about them instead of quoting them.
 ### If the user has game files and no script
 
 Do not teach extraction of copyrighted games here, and do not assume the user can do it.
+**Only for a copy the user holds.** If they do not own one, there is nothing here to unpack — go
+back to the transcript search above, not to a download.
 You need one thing out of the copy they own: **a plain text file where each line carries a speaker
 tag, grouped by scene.** Any tool that produces that shape is fine.
 
