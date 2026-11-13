@@ -39,16 +39,43 @@ Does this file know, per line, who spoke it, where the scene begins, and where t
 
 ### If the user has game files and no script
 
-Do not teach extraction of copyrighted games here. **State the target instead:**
+Do not teach extraction of copyrighted games here, and do not assume the user can do it.
+You need one thing out of the copy they own: **a plain text file where each line carries a speaker
+tag, grouped by scene.** Any tool that produces that shape is fine.
 
-> You need a plain text file where each line carries a speaker tag, grouped by scene. Any tool that produces that shape is fine.
+**Try it yourself, once, inside a time box.** About ten minutes, public tools only — for KiriKiri that
+is usually GARbro to open the archive and FreeMote to decompile a `.ks.scn` script. Prepare the folder
+yourself and hand the user at most one action. If their answer to "what can you do" was `none`, hand
+them nothing and do the work or take the fallback.
+
+**The three stop signs, all cheap to see:**
+
+```
+the index is encrypted and every name in it is a 32-character hash
+the archive carries the author's own note against extraction
+the tool opens the archive, but the script is compiled (.ks.scn / .psb) and no decompiler is at hand
+```
+
+**Any one of them: stop. Do not derive keys, do not guess names, do not scan three gigabytes of zlib
+streams.** A wrong guess does not fail loudly — it produces a clean-looking table with a few hundred
+lines missing, and the missing lines are the ordinary ones, which is exactly where the voice lives.
+
+**Then change source in one sentence, without asking for permission:**
+
+> The script in your copy is locked, so I am not going to unpack it. I will use a transcript that
+> already exists, and mark every line as second-hand.
+
+The switch needs no approval because it does not change the product. It needs the sentence and the
+mark: a second-hand text is a downgrade in evidence, not in kind. Record which one it is — fan
+translation, anime subtitles, a text dump — and mark every citation. If the user later wants the
+original wording, the only route is a machine that can unpack the copy they own.
 
 Common engine shapes, so you can recognise what you are handed:
 
 | Engine | Extension | Speaker marker |
 |---|---|---|
 | Ren'Py | `.rpy` | `"Name" "line"` — plain text, easiest |
-| KiriKiri | `.ks` | `[name="…"]` tags |
+| KiriKiri | `.ks` / `.ks.scn` | `[name="…"]` tags; `.scn` is compiled and needs FreeMote |
 | NScripter | `.txt` | `*label` scene blocks |
 | Others | `.pck` / `.arc` / `.pak` | varies; need a general unpacker |
 

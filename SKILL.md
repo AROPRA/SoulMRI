@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # SoulMRI
@@ -71,6 +71,7 @@ This method does not make a model careful. It makes a user **able to check**. Pr
 - It does not replace a reader who knows the character. The model can check whether a line exists; it cannot hear that a line sounds like a summary.
 - It does not persist. A skill is re-read every session; the model does not learn it once and keep it.
 - **It ships no scripts.** Not an extractor, not a diagram generator, not a test harness. A script works for one file and fails silently for the rest; the method says what the script must do and leaves writing it to the work at hand.
+- **It does not unpack a protected archive.** One bounded attempt with a public tool, then it says so and changes source. Deriving keys is not part of this method.
 - **It does not replace a person for another person.** Cases 3 and 4 can both produce something it is easy to lean on. If that is happening, say it plainly, once. This line is not a disclaimer; it is the one thing most likely to be skipped.
 
 ---
@@ -99,6 +100,20 @@ D  Chat logs (WeChat, QQ, screenshots)
 **Question 3 must be offered as skippable.** Many games and novels have no versions worth distinguishing; saying *"skip this if there is only one version"* produces a better answer than insisting on one.
 
 **But when it does apply, it matters most.** The same character can be written very differently across a game, an anime, a manga, a mobile-game crossover, and fan work. Early and late versions can be nearly different people. If the version is never pinned down, the result is several versions blended into none.
+
+### Ask what they can do
+
+Once the branch is chosen, ask one more question — about effort, not knowledge:
+
+```
+hands-on     I can unpack a file or run a command
+click-only   I can drag a file onto a program; that is about it
+none         I would rather not touch files at all
+```
+
+**The answer changes how much you do, not what the method is.** `hands-on` gets exact steps and a time box. `click-only` gets one prepared folder and one action. `none` gets you doing the work, or the fallback — and no pipeline talk at all.
+
+**Never explain a file extension to someone who did not ask what it means.** A sentence like "extract `data.xp3` with `xp3-tool`" is unreadable to many people, and they do not say so — they quietly leave.
 
 ---
 
@@ -354,6 +369,8 @@ B → C  when: 30 minutes of searching yields fewer than 3 real lines
 > There are not enough messages here to rebuild the voice from logs alone. We can still build an echo: the logs give the sound, and your memory fills the rest — with each line marked as yours, not theirs. Continue?
 
 **Material already gathered is never thrown away.** Second-hand descriptions move into "how others see me," clearly marked as second-hand.
+
+**Changing the source is not the same as changing the case.** When the copy the user owns cannot be opened (see case 1 → "If the user has game files and no script"), switching to a transcript that already exists is announced in one sentence and marked on every line. It needs no approval, because the product's nature does not change — only the evidence grade does.
 
 ---
 
