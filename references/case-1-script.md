@@ -37,6 +37,25 @@ Does this file know, per line, who spoke it, where the scene begins, and where t
 
 **If yes → structured enough to script.** If no → see the four tiers below.
 
+### If the user has nothing at hand
+
+A known work usually has its text online — a script dump, the novel itself, a subtitle file, an
+extracted game text. **Look for it before asking the user to.**
+
+**Judge it by reading a page, not by its name:**
+
+```
+transcript   one line per line, speaker tags or timestamps, scene breaks      → usable
+retelling    prose about them, no line boundaries, "she said something like"  → not usable
+commentary · wiki summary · analysis · fan fiction · comment threads          → not usable
+```
+
+**A transcript someone else unpacked and translated is still their lines.** It is not a retelling:
+record which translation it is and mark the citations `(translated)`. A retelling is what cannot be
+used — it tells you about them instead of quoting them.
+
+**Show the user the file and the version, take one confirmation, then build the table.**
+
 ### If the user has game files and no script
 
 Do not teach extraction of copyrighted games here, and do not assume the user can do it.
@@ -62,13 +81,14 @@ lines missing, and the missing lines are the ordinary ones, which is exactly whe
 
 **Then change source in one sentence, without asking for permission:**
 
-> The script in your copy is locked, so I am not going to unpack it. I will use a transcript that
-> already exists, and mark every line as second-hand.
+> The script in your copy is locked, so I am not going to unpack it. I will find the text elsewhere,
+> show it to you, and record which version it is.
 
-The switch needs no approval because it does not change the product. It needs the sentence and the
-mark: a second-hand text is a downgrade in evidence, not in kind. Record which one it is — fan
-translation, anime subtitles, a text dump — and mark every citation. If the user later wants the
-original wording, the only route is a machine that can unpack the copy they own.
+The switch needs no approval because the product does not change. It does need the sentence, one look
+at the file by the user, and a record in the citations. A translated transcript is still their lines —
+mark it `(translated)`. The retelling is what must never enter: commentary, summaries, analysis, fan
+fiction. If the user later wants the original wording, the only route is the copy they own or a
+version in the original language.
 
 Common engine shapes, so you can recognise what you are handed:
 

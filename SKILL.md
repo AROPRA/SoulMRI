@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # SoulMRI
@@ -78,7 +78,7 @@ This method does not make a model careful. It makes a user **able to check**. Pr
 
 ## Trigger the four nodes first
 
-Before anything else, ask exactly one question — what material do you actually hold?
+Before anything else, ask one question — where does the material come from?
 
 ```
 A  A full script, novel, subtitle file, or game text
@@ -86,6 +86,8 @@ B  Only what can be found online
 C  Nothing — building from scratch
 D  Chat logs (WeChat, QQ, screenshots)
 ```
+
+**Assume the user has nothing.** Holding the file is not a condition for A: if the work is known and they would rather not dig, the A path still opens — look for the full text yourself (a script dump, the novel, subtitles), show them what you found, and let them confirm the version before starting. `C` is for a character with no text anywhere, not for a user with empty hands.
 
 **Then, and only for A and B, follow up with three more:**
 
@@ -370,7 +372,7 @@ B → C  when: 30 minutes of searching yields fewer than 3 real lines
 
 **Material already gathered is never thrown away.** Second-hand descriptions move into "how others see me," clearly marked as second-hand.
 
-**Changing the source is not the same as changing the case.** When the copy the user owns cannot be opened (see case 1 → "If the user has game files and no script"), switching to a transcript that already exists is announced in one sentence and marked on every line. It needs no approval, because the product's nature does not change — only the evidence grade does.
+**Changing the source is not the same as changing the case.** When the copy the user owns cannot be opened (see case 1 → "If the user has game files and no script"), or when they have nothing at hand and the text is found elsewhere, the switch is announced in one sentence, shown to the user once, and recorded in the citations. It needs no approval, because the product's nature does not change. What must never enter is the retelling — commentary, wiki summaries, analysis, fan fiction; a transcript that merely passed through someone else's hands is still their lines.
 
 ---
 
