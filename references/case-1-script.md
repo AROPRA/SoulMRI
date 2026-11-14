@@ -53,6 +53,12 @@ disk, not with lines. What you want is a page that already holds the text — an
 **Do not invent an acquisition path.** "Download the game first" is not a step of this method; it is
 the point where the method is supposed to stop and say so.
 
+**Searching has no limit; a different version does.** One site, several sites, another medium, a
+translated collection — all the same move, as long as each page is read before it is trusted and its
+version is recorded. But game, anime, manga and novel are not four sources for one person: they are
+four people with one name. When a search turns up a different version, stop and show the user both —
+that is a product decision, and theirs.
+
 **Judge it by reading a page, not by its name:**
 
 ```
@@ -79,6 +85,10 @@ tag, grouped by scene.** Any tool that produces that shape is fine.
 is usually GARbro to open the archive and FreeMote to decompile a `.ks.scn` script. Prepare the folder
 yourself and hand the user at most one action. If their answer to "what can you do" was `none`, hand
 them nothing and do the work or take the fallback.
+
+**One attempt means one tool, one pass.** If it fails, or a stop sign appears, stop there: do not fetch
+a second tool, do not try the next layer, do not come back with a better idea. Digging deeper into one
+copy is what the limit is for. Looking somewhere else for text is a different move, and it has no limit.
 
 **The three stop signs, all cheap to see:**
 
