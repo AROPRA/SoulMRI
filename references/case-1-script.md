@@ -53,11 +53,12 @@ disk, not with lines. What you want is a page that already holds the text — an
 **Do not invent an acquisition path.** "Download the game first" is not a step of this method; it is
 the point where the method is supposed to stop and say so.
 
-**Searching has no limit; a different version does.** One site, several sites, another medium, a
+**Searching has no limit; judging a version does.** One site, several sites, another medium, a
 translated collection — all the same move, as long as each page is read before it is trusted and its
-version is recorded. But game, anime, manga and novel are not four sources for one person: they are
-four people with one name. When a search turns up a different version, stop and show the user both —
-that is a product decision, and theirs.
+version is recorded. What needs a decision is not "which medium" but **"does the difference make them
+a different person"**: an adaptation that keeps the lines is the same person (merge them, label the
+medium); a long span where they grow is a version (sections by period, every line cited to its
+period); a remake or a parallel version is another person (ask, or keep them apart).
 
 **Judge it by reading a page, not by its name:**
 

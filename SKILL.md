@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.4.0"
+  version: "1.5.0"
 ---
 
 # SoulMRI
@@ -104,9 +104,19 @@ D  Chat logs (WeChat, QQ, screenshots)
 
 **C and D skip questions 2 and 3 entirely.** An original character and a real person have no source work and no versions. Ask only what to call them — and if they are a real person, ask what *you* called them, since that is what belongs in the soul.
 
-**Question 3 must be offered as skippable.** Many games and novels have no versions worth distinguishing; saying *"skip this if there is only one version"* produces a better answer than insisting on one.
+**Question 3 is not "which medium" — it is "does the difference make them a different person".** Ask only when the answer changes the product:
 
-**But when it does apply, it matters most.** The same character can be written very differently across a game, an anime, a manga, a mobile-game crossover, and fan work. Early and late versions can be nearly different people. If the version is never pinned down, the result is several versions blended into none.
+```
+same person, other medium   an adaptation that keeps the lines (game → anime)   → one soul, label the sources
+same person, other period   a long story where they grow up (child → adult)     → one soul, sections by period
+different people, one name  a remake, a crossover, a parallel-world version     → ask, or keep them apart
+```
+
+**An adaptation is not a version.** If the anime says nearly the same lines as the game, separating them only adds ceremony and loses lines: write one soul, and record which medium each quote came from. *ATRI*'s anime and game are one person; a remake that rewrote her is not.
+
+**A long span is a version.** A child and an adult with one name are not one person: their views, their relationships and their way of speaking have moved (Dragon Ball's Son Goku, Clannad's Tomoya). When the span is long and the user has not named a period, **propose a combined soul**: one file, sections by period ("when I was small", "after she was gone"), every line cited to its period — never one blended sentence. Say what you are doing before you do it.
+
+**Most long works are not like that.** A million words of *Re:Zero* or a light novel of *Makeine* still describe one character whose core does not move much; length alone is not a version.
 
 ### Ask what they can do
 
@@ -379,7 +389,7 @@ B → C  when: 30 minutes of searching yields fewer than 3 real lines
 
 **Changing the source is not the same as changing the case.** When the copy the user owns cannot be opened (see case 1 → "If the user has game files and no script"), or when they have nothing at hand and the text is found elsewhere, the switch is announced in one sentence, shown to the user once, and recorded in the citations. It needs no approval, because the product's nature does not change. What must never enter is the retelling — commentary, wiki summaries, analysis, fan fiction; a transcript that merely passed through someone else's hands is still their lines.
 
-**The one exception is a different version.** Game, anime, manga and novel are not four sources for one person; they are four people with one name. Swap sources freely, but when the swap changes the *version*, stop: show both, say how they differ, and let the user choose. That choice is theirs, and a soul that mixes two versions belongs to neither.
+**The one exception is a version that changes who they are.** Game, anime and novel are usually one person in another medium: merge them, and label which medium each line came from. But a remake that rewrote the character, a parallel-world version, or a span long enough that they grew into someone else is a different person — show the difference and let the user choose. If they have not chosen a period, propose one file with sections by period rather than two files or one blend.
 
 ---
 
