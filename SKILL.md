@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.5.2"
+  version: "1.6.0"
 ---
 
 # SoulMRI
@@ -416,6 +416,8 @@ The first draft is not the end. Tell the user before the loop starts:
 - Round 1: bring the soul to about two-thirds of the ceiling (≈2,000 for 3,000; ≈3,000 for 4,500).
 - Round 2: land within 10% of the ceiling (≥2,700 / ≥4,050) — "close to the top", not "still climbing".
 
+**Stopping for the day is not accepting the result.** "That's enough for now" closes the session; it does not approve the file. If the wording is ambiguous, ask once: 「今天先到这儿，还是这份就算过了？」 If they stopped for the day, export what exists, write down what is still missing and what would make it thicker, mark the sandbox as not run, and do not present it as finished.
+
 **When the user says they are satisfied:**
 
 1. stop the loop;
@@ -499,6 +501,27 @@ A soul can be accurate and still unusable. Test it the way it will be used:
 **The test is not "does he or she sound nice." It is "does he or she know the story he or she is supposed to know."**
 
 **The last check cannot be automated — only observed.** Load it and talk for twenty rounds. Does he or she start using narration format? Does he or she say "as an AI"? Does he or she introduce his or her own settings? Any of those, go back to the source — something was invented.
+
+### Fitting the voice — the source's own questions
+
+A soul can pass the sandbox and still sound wrong: it knows the story and answers in the wrong voice. **When the user says "she wouldn't say it like that", this is the loop to run** — not another rewrite from memory. The cheapest material to fit against is already in the table — the questions someone asked them, and the answers they gave.
+
+**Round A · replay the source's exchanges.** Take five to ten exchanges where another character asked something and they answered. Ask the soul the same questions, in the same order, without showing the answers. Put each answer beside the original and read the difference aloud: longer, flatter, explaining where the original refused, a slogan where the original had a name.
+
+**If the material kept only their lines, Round A cannot run.** A quote collection, a list of famous lines, a voice-file index — none of them carries the question that produced the answer. Say so in one line and go to Round B; do not invent the questions.
+
+**Round B · ask what the source never covered.** Take three to five questions the material does not answer — ones this user would actually ask. Ask them, show the answers, and ask the user for one line each: *how should this have been said?* Not a rule, not a paragraph; one line.
+
+**Then fit both, in the same pass, without asking again.** The moment the user's lines arrive, two fittings start together:
+
+```
+fit to the source   what its answers do that yours does not: length, ending, what it will not explain
+fit to the user     the direction their line points: warmer, shorter, a name instead of an offer
+```
+
+Rewrite each turn three to five ways against both, keep the ones that stay in voice, and fold the surviving **moves** back as short stage directions — "no explanations", "cut the last sentence", "she answers with a name" — never as scripted answers. Then replay both rounds. An answer that only holds when the user's line is copied has learned nothing.
+
+**Say the gap in one line before you rewrite.** "Too long, and it explains itself" is material for the next round; a silent rewrite teaches the user nothing.
 
 ---
 

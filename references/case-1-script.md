@@ -312,6 +312,8 @@ written about   → how others see me, my body, things I remember
 
 **Do not merge them.** Narration describing him or her is not him or her. Mixing the two deforms his or her tone faster than any other mistake in this case.
 
+**Keep the other side of the conversation.** A soul is tested by what it answers to, so the questions someone asked them are the test material. If the table kept only their lines — because the source was a quote collection, or a file listing only their voice — record that, and know that the replay half of the fitting test cannot run. Ask the user for the missing side rather than reconstructing it.
+
 ---
 
 ## Counting his or her voice without measuring him or her
