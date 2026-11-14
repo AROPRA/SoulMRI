@@ -186,15 +186,21 @@ The short version: probe with a read-only script, confirm where the speaker and 
 Every path — downloaded or extracted — converges into this before extraction begins:
 
 ```
-id<TAB>speaker<TAB>line<TAB>source
-0001    诗梦     "…whatever you like."        ch03/L2453
-0002    (empty)  The rain had not stopped.    ch03/L2454   ← empty speaker = narration
+id<TAB>speaker<TAB>line<TAB>source<TAB>class
+0001    诗梦     "…whatever you like."        ch03/L2453   said
+0002    (empty)  The rain had not stopped.    ch03/L2454   in-scene
+0003    (empty)  People said she never slept. ch07/L1902   mention
 ```
 
-**This one table solves four problems at once:**
+**The fifth column is not optional.** Every narration row must be tagged `in-scene` (narration inside a scene where they appear) or `mention` (narration elsewhere that names them) **before the table is called done**. If the column is left blank, the two piles get merged somewhere downstream and nobody notices — the character ends up looking more talked-about, and more consistently described, than they are.
+
+**The two piles are built at the table, not sorted later.** Building the table is exactly the moment when the scene id is in hand; a later pass has to reconstruct it.
+
+**This one table solves five problems at once:**
 
 - line numbers exist → satisfies "every line carries its source"
 - the two classes are already split → satisfies "split the material"
+- narration is already split into in-scene and mention → satisfies "locate narration about them"
 - scene boundaries exist → satisfies "cut by scene"
 - script and model consume the same input → anything extracted can be reconciled
 
@@ -260,6 +266,8 @@ Two independent questions, and the second one is the one people skip:
 ```
 Default: do both. Do not ask the user which one.
 ```
+
+**Both piles are tagged in the table's `class` column when the table is built** (see Step 2). If you are reading this section and the table has no `class` column, go back — sorting narration after the fact means reconstructing scene ids you already had.
 
 ### Why the two must stay separate
 
