@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.5.1"
+  version: "1.5.2"
 ---
 
 # SoulMRI
@@ -400,6 +400,12 @@ B → C  when: 30 minutes of searching yields fewer than 3 real lines
 The first draft is not the end. Tell the user before the loop starts:
 
 > 接下来有几轮人工复核：您划哪里不对、哪里不像、哪里要扩，我改。每一轮结束我都会问一次；您满意了我们就停。
+
+**Say plainly that the first draft will be off — and by how much.** It is put together from quotes taken out of order, so its proportions, its emphasis and its silences will not match the person the user knows. Tell them this before they read it: the first version is a draft to be corrected, not a verdict to be accepted, and a large gap is expected rather than a failure.
+
+**Ask for corrections, not for a grade.** "Does it feel right?" gets a shrug. "What is wrong here, and what should be there instead?" gets material. The user knows the person; they do not have to know how to write the file.
+
+**The gap shrinks over rounds, and the rounds are cheap.** The first pass is usually the thinnest and the most wrong; that is where it starts, not where it ends.
 
 **At the end of every round, ask once:**
 
