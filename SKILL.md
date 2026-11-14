@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.6.0"
+  version: "1.6.1"
 ---
 
 # SoulMRI
@@ -424,6 +424,8 @@ The first draft is not the end. Tell the user before the loop starts:
 2. export the soul to a file;
 3. start the sandbox test;
 4. tell the user: 「现在进沙箱：我挂上这份文件，问五六个问题，再让它自己出题。这一步查的是TA知不知道自己的故事，不是听起来像不像。」
+
+**The file is a deliverable, not project material.** Write drafts, working notes and the final soul to a scratch folder the user names — never into a code repository, a working tree or a project directory. An output dropped into a repo gets committed by someone eventually, and the method is what is being published, not the person.
 
 **Do not skip the sandbox because the user said "good".** A satisfied user is the sign to start the test, not to skip it.
 
