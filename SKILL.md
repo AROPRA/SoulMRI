@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.5.0"
+  version: "1.5.1"
 ---
 
 # SoulMRI
@@ -176,6 +176,8 @@ Soft evidence  →  less may be stated
 ```
 
 **Filling the gaps is what produces acting voice.** There is no quota and no percentage to hit: the softer the evidence, the less may be stated. Whatever the source does not support stays unwritten, and the blank at the end is the same in every case — one line saying it is empty.
+
+**Enthusiasm is not evidence.** A user saying "take everything", "don't leave anything out" or "I want it thick" is a wish about completeness, not new proof. A line whose speaker you cannot establish stays out of the body no matter how much they want it in; say why in one sentence, keep the line in the working notes, and let the soul be thinner. The user can waive the ceremony, not the doubt.
 
 Read the matching reference before proceeding:
 

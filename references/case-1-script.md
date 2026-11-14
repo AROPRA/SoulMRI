@@ -219,6 +219,8 @@ If you cannot decide the speaker, leave it empty and append "UNSURE" at the end 
 
 **Every "UNSURE" line is omitted. Never assign it to the protagonist by default** — that is how a narrator's voice leaks into the character.
 
+**The user cannot waive this by asking for more.** "Use everything" changes what they want, not what the line can support. Keep it in the working notes with the reason, tell them the soul will be thinner because of it, and move on. A line attributed by tone is still a guess, even when the tone is convincing.
+
 ---
 
 ## Aside: do not read a CSV line by line
