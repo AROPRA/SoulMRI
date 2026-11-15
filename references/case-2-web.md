@@ -49,6 +49,19 @@ a quotes collection, a wiki voice-line list — is usable as the only source; la
 
 A real creator breaks the table above: there is no "official setting" and no "other characters". His or her own posts and videos are the body; the comment section is the "how others see me"; fan art and fan fiction stay out. The sampled body uses case 4's boundaries — public words only, no inference about private life, private use only. The advancement layer is separate (see Advancing life at the end); it is private and marked. Do not publish the soul as a character card of a real person. Expect a thinner soul than case 1; that is the material, not a failure.
 
+### When the material is live talk: sample the recordings
+
+For a VTuber or a streamer, the written transcript usually does not exist and the recordings do. The recording is the source, and a machine transcript of it can be the working base.
+
+**Sample across the timeline, not one long sitting.** Take passages from uploads spread by date; the first upload and the newest one must be in the sample. Aim for **5,000 to 10,000 characters of transcript in total** — that is the dose that shows how they talk, not just what they said once.
+
+**Do not correct the transcript.** Proper nouns and names come out wrong; fixing them turns the machine's guess into your quotation. Leave the text as it came out, and take names, dates and events from an encyclopedia or the creator's own written posts instead.
+
+**Delete the media once it is transcribed.** Keep the text and a note of which upload and which minute it came from.
+
+**What the transcript may do and what it may not.** It is the best evidence of *how* they talk — length, fillers, rhythm, what they refuse to answer — and it is where the scenes are. A line quoted from it carries `(ASR)`; a line quoted from it never carries a timestamp or a "verified" mark, because nobody checked it. **Pick scenes, not quotable one-liners**: a reaction, a refusal, a joke that landed tells you more than ten clean sentences.
+
+
 **Wikipedia-style summaries are the most tempting and the least usable.** They are one fan's compression of another fan's reading. Useful as an index; never as a quote.
 
 ---
