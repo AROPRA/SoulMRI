@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.10.0"
+  version: "1.10.1"
 ---
 
 # SoulMRI
@@ -387,9 +387,9 @@ Cases are not sealed. Downgrading is allowed, but **the user must agree to it** 
 
 **Say it plainly when proposing a 1 → 2 downgrade — by route number, and what that route does:**
 
-> Your copy has no full text, so route 1 is out. We go to **route 2**: I gather the lines people transcribed, drop every line that has only one source, and the result will be thinner than a script-based soul. Continue?
+> Your copy has no full text, so route 1 is out. We go to **route 2**: I keep only lines someone transcribed verbatim, drop anything that is only a paraphrase, and the result will be thinner than a script-based soul. Continue?
 
-**This is mandatory.** The user chose one of 1–4 at the start, so a downgrade is always *"we go to route 2"* — not "another method", not "a different approach". In the same breath say what route 2 means (web quotes only, single-source lines dropped, thinner result) and ask once. Never say "换个法子" or "another approach" without saying which route and what it costs; a user who has to ask "what method?" means the proposal was never made.
+**This is mandatory.** The user chose one of 1–4 at the start, so a downgrade is always *"we go to route 2"* — not "another method", not "a different approach". In the same breath say what route 2 means (web quotes only, verbatim transcriptions kept, paraphrases dropped, thinner result) and ask once. Never say "换个法子" or "another approach" without saying which route and what it costs; a user who has to ask "what method?" means the proposal was never made.
 
 **Say it plainly when proposing a 2 → 3 downgrade — also by route number:**
 

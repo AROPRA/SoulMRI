@@ -35,6 +35,10 @@ Audience comments  comments under his or her videos or posts, sampled      → "
 Fan work           fanfiction, analysis, memes, wiki summaries      → not used at all
 ```
 
+**Single source is not automatically out.** A page that copies the line verbatim — a transcript,
+a quotes collection, a wiki voice-line list — is usable as the only source; label it
+`single transcription`. A paraphrase does not enter the body even when three pages repeat it.
+
 **Audience comments are the one exception to "fan material is unusable."** For a creator whose work is supported by viewers, the comment section is where "how others see me" actually lives. Sample it: a few hundred comments scattered across videos, not the top ten. Discard noise (timestamps, "first!", @friends, pure emoji). Keep the ones that evaluate a video or praise the person. Then read the room — in some communities (东雪莲, 时雨羽衣) the comment section is mostly teasing and memes, and a line that sounds like a jab is affection, not evidence that he or she is disliked. Quote verbatim, keep the video/date, and never paraphrase a comment into a verdict.
 
 **If you can drive the user's logged-in browser, sample from the page console.** Open a video, run a loop over `x/v2/reply` with `credentials:'include'`, collect `member.uname` + `content.message`, then filter. If you cannot, ask the user to export the comment pages; never ask for their password.
