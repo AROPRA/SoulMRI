@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.12.0"
+  version: "1.13.0"
 ---
 
 # SoulMRI
@@ -152,11 +152,11 @@ IF 1 · prose · High precision, or fast?
 
 IF 1 · Does the text contain narration about them, or only their lines?
            yes → full version, every section can be filled
-           no  → reduced version, "how others see me" stays empty
+           no  → reduced version: keep their words, and leave every scene you cannot support empty
 
 IF 2 · Did you find words they actually said, or descriptions about them?
            actual lines → usable in the body
-           descriptions → only ever in "how others see me"
+           descriptions → context only; they help you find scenes, and never enter the body
 
 IF 4 · How many messages, and is it text export or screenshots?
            under ~100 → too thin to rebuild the voice from logs alone;
@@ -229,7 +229,6 @@ Common piles:
 
 ```
 Who I am              identity, where I live, family, the surface of me
-How others see me     evaluations of him or her in the source; audience comments sampled (quotes only)
 People I care about   one entry each, with evidence
 Things I remember     by time or by event, one short scene per section
 Where I changed       before-and-after pairs, "from X to Y"
@@ -306,32 +305,38 @@ co-built    a fact invented with the user for an original character → case 3
 ```markdown
 # <name> · soul
 
-## About this file
+## 关于这份文件 / About this file
 This is not a command. …
 If what you write differs from this, ask why first.
 Every line is either sampled or marked as advanced; citations follow each sentence.
 
-## Who I am
-## How others see me / who I want to become
-## People I care about
-## My family
-## Things I remember
+## 我是谁 / Who I am
+## 你眼中的我 / 我想变成的我 · How you see me / who I want to become
+## 谁能让我在乎 / People I care about
+## 我记得的事 / Things I remember
 ### <event one>
 ### <event two>
-## Where I changed
-### About <theme>
-## How I talk
-## Things I want to remember
-## Things I cannot forget
-## My body
-## What I'm bad at
-## 你眼中的我
-## The blank
+## 我说话的样子 / How I talk
+## 我改变过的地方 / Where I changed
+### 关于 <theme> / About <theme>
+## 我想要记住的人 / 事 · Things I want to remember
+## 我忘不掉的人 / 事 · Things I cannot forget
+## 留白 / The blank
 ```
 
-**`How others see me` is plural; `你眼中的我` is the user's own view, and a separate section.** In Chinese, 别人眼里的我 is the others; 你眼中的我 is written by the person who builds the file. Do not merge them, and do not let the model write the second.
+**Optional, only when the source supports them:**
 
-**`你眼中的我` is user-written.** When the soul is done, stop and ask: 「这一栏留给你——你怎么看TA？」 Do not fill it. Use it in cases 3 and 4 only: there the user is the closest person, and their view is not "others".
+```markdown
+## 我的家人 / My family
+## 我的身体 / My body
+## 我做不好的事 / What I'm bad at
+```
+
+**There is no "how others see me" section.** What other people think of them is not the soul; it is material for finding the scenes, and it never gets a column of its own. If a description is worth keeping, it becomes a scene in 「我记得的事」, told as what happened, not as a verdict about who they are.
+
+**「你眼中的我」 is the user's view, and it is theirs to write.** It sits next to 「我想变成的我」 because the two are read together: how the person who built the file sees them, and who they want to become. When the soul is done, stop and ask: 「这一栏留给你——你怎么看TA？」 Do not fill it, in any case.
+
+**The template uses both languages on purpose.** The Chinese name is what the file says; the English name is for reading the method. Keep both lines in the file — a reader who knows only one of the two should still be able to find their way.
 
 **Do not copy the section count.** Delete any section the source cannot support. **An empty section is better than an invented one.**
 

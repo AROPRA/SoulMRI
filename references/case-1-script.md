@@ -287,8 +287,8 @@ mentions while he or she is absent      → evidence about his or her reputation
 **So:**
 
 ```
-① → the "how others see me" body
-② → the same section, or a sub-section, marked "mentioned elsewhere"
+① in-scene   → scenes in 「我记得的事」, told as what happened
+② mention     → only as a note beside a scene, marked "mentioned elsewhere"
 ```
 
 **If a mention contradicts the in-scene narration, keep both and mark UNSURE.** Do not average them.
@@ -311,7 +311,7 @@ Do not try to filter this out mechanically. Three options, and the third is the 
 ③ Keep everything   carry the whole set forward, decide while writing.  ← default
 ```
 
-**Why ③:** the "how others see me" section gets read line by line anyway — that is the nature of the section. A mechanical filter applied before reading can only remove useful material, and a wrong removal is invisible. **Over-inclusion is recoverable; over-filtering is not.**
+**Why ③:** the narration set gets read line by line when you decide which scenes to keep — that is where it is used now that there is no "how others see me" column. A mechanical filter applied before reading can only remove useful material, and a wrong removal is invisible. **Over-inclusion is recoverable; over-filtering is not.**
 
 **Record the scene id with every line.** When you later decide a line belongs to the setting rather than to him or her, you will need to know which scene it came from to check.
 
@@ -320,8 +320,8 @@ Do not try to filter this out mechanically. Three options, and the third is the 
 ## What the four piles look like once the table exists
 
 ```
-he or she said        → the piles about speech, catchphrases, how I talk
-written about   → how others see me, my body, things I remember
+he or she said  → the piles about speech, catchphrases, how I talk
+written about    → scenes in 「我记得的事」, and 「我的身体」 when it is about the body
 ```
 
 **Do not merge them.** Narration describing him or her is not him or her. Mixing the two deforms his or her tone faster than any other mistake in this case.

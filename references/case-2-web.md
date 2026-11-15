@@ -30,8 +30,8 @@ Every source online falls into one of four classes. Keep them apart or the resul
 
 ```
 Original words     what he or she actually said, or the official script   → body text only
-Official setting   officially authored third-person description     → "how others see me"
-Audience comments  comments under his or her videos or posts, sampled      → "how others see me"
+Official setting   officially authored third-person description     → identity facts for 我是谁; never a verdict
+Audience comments  comments under his or her videos or posts        → context only, never quoted
 Fan work           fanfiction, analysis, memes, wiki summaries      → not used at all
 ```
 
@@ -39,21 +39,21 @@ Fan work           fanfiction, analysis, memes, wiki summaries      → not used
 a quotes collection, a wiki voice-line list — is usable as the only source; label it
 `single transcription`. A paraphrase does not enter the body even when three pages repeat it.
 
-**Audience comments are the one exception to "fan material is unusable."** For a creator whose work is supported by viewers, the comment section is where "how others see me" actually lives. Sample it: a few hundred comments scattered across videos, not the top ten. Discard noise (timestamps, "first!", @friends, pure emoji). Keep the ones that evaluate a video or praise the person. Then read the room — in some communities (东雪莲, 时雨羽衣) the comment section is mostly teasing and memes, and a line that sounds like a jab is affection, not evidence that he or she is disliked. Quote verbatim, keep the video/date, and never paraphrase a comment into a verdict.
+**Audience comments are for reading the room, not for the file.** There is no "how others see me" section to put them in, and that is deliberate: what the audience thinks is not the person. Read a few hundred scattered comments to learn the register — in some communities (东雪莲, 时雨羽衣) the teasing is affection — and let that change how you read their words. Nothing from the comment section is quoted into the soul.
 
 **If you can drive the user's logged-in browser, sample from the page console.** Open a video, run a loop over `x/v2/reply` with `credentials:'include'`, collect `member.uname` + `content.message`, then filter. If you cannot, ask the user to export the comment pages; never ask for their password.
 
-**Separate the creator's own replies from the audience.** In a comment sample, the UP主's own comments are his or her words — body text, not "how others see me". Filter them out by account id before calling the rest audience. The sample also skews toward high-like comments; do not present it as the whole audience.
+**Separate the creator's own replies from the audience.** In a comment sample, the UP主's own comments are his or her words — body text, not audience. Filter them out by account id before calling the rest audience. The sample also skews toward high-like comments; do not present it as the whole audience.
 
 ## If the subject is a real creator, not a fictional character
 
-A real creator breaks the table above: there is no "official setting" and no "other characters". His or her own posts and videos are the body; the comment section is the "how others see me"; fan art and fan fiction stay out. The sampled body uses case 4's boundaries — public words only, no inference about private life, private use only. The advancement layer is separate (see Advancing life at the end); it is private and marked. Do not publish the soul as a character card of a real person. Expect a thinner soul than case 1; that is the material, not a failure.
+A real creator breaks the table above: there is no "official setting" and no "other characters". His or her own posts and videos are the body; the comment section is context for reading the room, never a column; fan art and fan fiction stay out. The sampled body uses case 4's boundaries — public words only, no inference about private life, private use only. The advancement layer is separate (see Advancing life at the end); it is private and marked. Do not publish the soul as a character card of a real person. Expect a thinner soul than case 1; that is the material, not a failure.
 
 ### When the material is live talk: sample the recordings
 
 For a VTuber or a streamer, the written transcript usually does not exist and the recordings do. The recording is the source, and a machine transcript of it can be the working base.
 
-**Sample across the timeline, not one long sitting.** Take passages from uploads spread by date; the first upload and the newest one must be in the sample. Aim for **5,000 to 10,000 characters of transcript in total** — that is the dose that shows how they talk, not just what they said once.
+**Sample across the timeline, not one long sitting.** Take passages from uploads spread by date; the first upload and the newest one must be in the sample. Aim for **5,000 to 10,000 characters of transcript in total**; **3,000 is the floor**, and more is better — length is what lets the ordinary lines show up, and the ordinary lines are where the voice lives. Below 3,000 the sample is too thin to hear anyone.
 
 **Do not correct the transcript.** Proper nouns and names come out wrong; fixing them turns the machine's guess into your quotation. Leave the text as it came out, and take names, dates and events from an encyclopedia or the creator's own written posts instead.
 
@@ -147,12 +147,12 @@ Must find, goes into the body
   □ The ones with voice acting or screenshots (most reliable)
   □ The same line corroborated by two sources, or copied verbatim by a transcriber
 
-Optional, goes into "how others see me"
+Optional, context only — never quoted into the file
   □ Official character introduction
   □ Official artbook or setting-book excerpts
   □ Other characters' remarks about him or her (verbatim, not paraphrased)
-  □ Audience comments that evaluate a video or praise the person
-    (sampled across many videos, verbatim, source and date kept)
+  □ Audience comments, read for the room's register
+    (sampled across many videos; they change how you read the lines, not what you write)
 
 Not used
   □ Fan fiction, analysis, wiki summaries
