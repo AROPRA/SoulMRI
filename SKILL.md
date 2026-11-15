@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.14.0"
+  version: "1.15.0"
 ---
 
 # SoulMRI
@@ -91,7 +91,7 @@ Before anything else, ask one question — where does the material come from?
 
 **Assume the user has nothing.** Holding the file is not a condition for route 1: if the work is known and they would rather not dig, route 1 still opens — look for the full text yourself (a script dump, the novel, subtitles), show them what you found, and let them confirm the version before starting. Route 3 is for a character with no text anywhere, not for a user with empty hands.
 
-**Write nothing into the user's project.** Drafts, tables and the final soul live in a scratch folder the user names — never in a code repository or a working tree. State the path before any file is created; the soul is a deliverable, not project material.
+**Write nothing into the user's project — and nothing into this repository.** Drafts, tables and the final soul live in a scratch folder the user names; working files (scripts, downloaded audio, models, transcripts) live there too. Never write into a code repository or a working tree, and least of all into the repository that holds this skill: the folder you read SKILL.md from is not your workspace, and a 400 MB model cache inside it is a delivery defect. State the path before any file is created; the soul is a deliverable, not project material.
 
 **Found, not acquired.** Looking for the text means looking for a page that already contains it. It never means getting hold of the game: no download, no install, no SteamCMD, no store page worked around, no mirror. Those give you a game, not lines, and a game you obtained is not evidence of anything the user said.
 

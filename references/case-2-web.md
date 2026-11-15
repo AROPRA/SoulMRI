@@ -55,6 +55,8 @@ For a VTuber or a streamer, the written transcript usually does not exist and th
 
 **Subtitles first, and say so when there are none.** Before touching audio, check the player's subtitle list (`x/player/v2` → `subtitle.subtitles`). If there is CC, take it: it costs nothing and needs no transcription. If the list is empty, tell the user in one sentence — 「这几支视频没有字幕，我要把音频拉下来转写，转完就删」 — and then go to audio. Burned-in subtitles are pictures, not text; do not read them.
 
+**Keep the working folder out of the repository.** Scripts, downloaded audio, ASR models and transcripts go in one scratch folder the user names (or the OS temp dir); the repository that holds this skill is never that folder. A model cache can be hundreds of megabytes — writing it into the skill repo turns a reading job into a delivery defect.
+
 **Pull and transcribe in a sub-agent.** Raw audio, whole transcripts and noisy segments must not land in the main conversation: they flood the context and start acting as evidence. Give the sub-agent the creator, the timeline and the rules; it does the sampling, the transcription and the **first screen** — drop segments by other people, fan imitations, songs and passages too noisy to hear — and returns only the kept passages with date, video id and minute, plus what was dropped and why. The main session does the **proofreading**: checks each kept quote against the returned text, decides what enters the soul, and never re-reads the raw corpus.
 
 **If you cannot start a sub-agent**, write the transcript to a file and work from the file: never paste the whole corpus into the conversation, and never let it stand in for the source without the file path beside it.
