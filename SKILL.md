@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.18.0"
+  version: "1.19.0"
 ---
 
 # SoulMRI
@@ -324,7 +324,7 @@ Every line is either sampled or marked as advanced; citations follow each senten
 ## 留白 / The blank
 ```
 
-**The order is fixed.** The list above is the order the file is read in: 「你眼中的我」 always sits immediately after 「我是谁」, 「我记得的事」 before 「我说话的样子」, and the two weight sections sit side by side near the end. Do not reorder to suit the material, and do not rename a section to fit what you found.
+**The order is fixed — the second-level headings, that is.** The list above is the order the file is read in: 「你眼中的我」 always sits immediately after 「我是谁」, 「我记得的事」 before 「我说话的样子」, and the two weight sections sit side by side near the end. Do not reorder an H2 to suit the material, do not rename one, and do not drop one. Third-level headings are free: use as many as the scenes need, name them after the scene, and let a section have none when the material is a single thing.
 
 **Never add a section.** If something does not fit, it goes into the nearest existing section or it stays out. A new heading for a feeling — 「我怕的东西」 is the example that keeps appearing — invents a column the reader did not ask for and the next model will fill it.
 
