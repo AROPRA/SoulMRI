@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.20.0"
+  version: "1.21.0"
 ---
 
 # SoulMRI
@@ -345,6 +345,7 @@ Every line is either sampled or marked as advanced; citations follow each senten
 
 **The template uses both languages on purpose.** The Chinese name is what the file says; the English name is for reading the method. Keep both lines in the file — a reader who knows only one of the two should still be able to find their way.
 
+**A number you report comes from the file.** When you say how long the soul is, count it — `wc -m` on the finished file, or the editor's own count — and say what you counted (characters, or Chinese characters). A remembered number is a guess wearing a number's clothes, and the reader will check it.
 **Keep every heading, even the empty ones.** A section the source cannot support stays in the file with nothing under it — an empty section is better than an invented one, and a missing one is a hole the next reader fills. Only the optional block may be absent, and only when the material has nothing for it.
 
 ### Two sections that are easy to drop, and should not be
