@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.17.0"
+  version: "1.18.0"
 ---
 
 # SoulMRI
@@ -324,6 +324,13 @@ Every line is either sampled or marked as advanced; citations follow each senten
 ## 留白 / The blank
 ```
 
+**The order is fixed.** The list above is the order the file is read in: 「你眼中的我」 always sits immediately after 「我是谁」, 「我记得的事」 before 「我说话的样子」, and the two weight sections sit side by side near the end. Do not reorder to suit the material, and do not rename a section to fit what you found.
+
+**Never add a section.** If something does not fit, it goes into the nearest existing section or it stays out. A new heading for a feeling — 「我怕的东西」 is the example that keeps appearing — invents a column the reader did not ask for and the next model will fill it.
+
+**The optional sections go between the two weight sections and 「留白」**, in this order: 我的家人, 我的身体, 我做不好的事. Any other optional section is not optional, it is an addition.
+
+**The two weight sections are two sections.** 我想要记住 and 我忘不掉 are never merged into one heading, and 「你眼中的我」 is never folded into the closing paragraph — a blank column that is still visible tells the reader it is theirs.
 **Optional, only when the source supports them:**
 
 ```markdown
