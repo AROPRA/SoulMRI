@@ -382,6 +382,12 @@ Cases are not sealed. Downgrading is allowed, but **the user must agree to it** 
 
 **Case 4 has no downgrade row.** Thin chat logs — fewer than ~100 messages, fragmentary screenshots — change the *sourcing*, never the product. The output stays an echo, in the case-4 format: what the logs give is the sound, and the user's memory fills the rest, with every line marked as memory rather than as a log. See `references/case-4-chat.md` → "When there is not enough material — borrow, don't switch products".
 
+**Say it plainly when proposing a 1 → 2 downgrade — name the route, not "another method":**
+
+> Your copy has no full text, so case 1 is out. I will work it as case 2: gather the lines people transcribed, drop every line that has only one source, and the result will be thinner than a script-based soul. Continue?
+
+**Never say "换个法子" or "another approach" without saying which one and what it costs.** The user should not have to ask "what method?" — that question means the proposal was not a proposal. Name the case, name the rules that will apply, name the price, then ask once.
+
 **Say it plainly when proposing a 2 → 3 downgrade:**
 
 > Nothing online records what they actually said. Continuing means *you set the direction and I fill the details* — the result will resemble them, but it will not rest on the same evidence. Continue?
