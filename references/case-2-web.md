@@ -53,6 +53,12 @@ A real creator breaks the table above: there is no "official setting" and no "ot
 
 For a VTuber or a streamer, the written transcript usually does not exist and the recordings do. The recording is the source, and a machine transcript of it can be the working base.
 
+**Subtitles first, and say so when there are none.** Before touching audio, check the player's subtitle list (`x/player/v2` → `subtitle.subtitles`). If there is CC, take it: it costs nothing and needs no transcription. If the list is empty, tell the user in one sentence — 「这几支视频没有字幕，我要把音频拉下来转写，转完就删」 — and then go to audio. Burned-in subtitles are pictures, not text; do not read them.
+
+**Pull and transcribe in a sub-agent.** Raw audio, whole transcripts and noisy segments must not land in the main conversation: they flood the context and start acting as evidence. Give the sub-agent the creator, the timeline and the rules; it does the sampling, the transcription and the **first screen** — drop segments by other people, fan imitations, songs and passages too noisy to hear — and returns only the kept passages with date, video id and minute, plus what was dropped and why. The main session does the **proofreading**: checks each kept quote against the returned text, decides what enters the soul, and never re-reads the raw corpus.
+
+**If you cannot start a sub-agent**, write the transcript to a file and work from the file: never paste the whole corpus into the conversation, and never let it stand in for the source without the file path beside it.
+
 **Sample across the timeline, not one long sitting.** Take passages from uploads spread by date; the first upload and the newest one must be in the sample. Aim for **5,000 to 10,000 characters of transcript in total**; **3,000 is the floor**, and more is better — length is what lets the ordinary lines show up, and the ordinary lines are where the voice lives. Below 3,000 the sample is too thin to hear anyone.
 
 **Do not correct the transcript.** Proper nouns and names come out wrong; fixing them turns the machine's guess into your quotation. Leave the text as it came out, and take names, dates and events from an encyclopedia or the creator's own written posts instead.
