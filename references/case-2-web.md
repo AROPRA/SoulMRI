@@ -13,10 +13,12 @@ Game package?        Ren'Py / KiriKiri / NScripter → unpack and read (case 1, 
 Complete script?     「台本」「脚本」「字幕」「台词集」 → case 1
 Anime?               subtitle files can be extracted → case 1
 Novel?               the original text is usually online → case 1
-Manga only?          images, little text; OCR is expensive → stay in case 2
+Manga only?          images; a page can be OCR'd, but not attributed → stay in case 2
 ```
 
 **If any of the first four exists, switch to case 1 and use its two paths.** Do not build a soul from descriptions when the script is one search away. Search for the work's original medium (novel / manga / anime / game), not only for the character's name.
+
+**Never read scans, and never OCR pages.** A page can be turned into text, but not into a conversation: the speaker lives in the drawing, not in the characters. Scanned dialogue comes out as an unattributed stream, and every line then has to be attributed by guess — which is the one failure this method exists to prevent. If the user offers scans, decline in one sentence and go back to route 2. If the material is a manga and nothing else, the honest answer is that the soul will be thin; it is not a reason to invent a reading path.
 
 **The upgrade is automatic.** The user does not need to know the four cases; if the material turns out to be a full source, move to case 1 and say so.
 

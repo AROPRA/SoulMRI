@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.9.0"
+  version: "1.9.1"
 ---
 
 # SoulMRI
@@ -73,6 +73,7 @@ This method does not make a model careful. It makes a user **able to check**. Pr
 - **It ships no scripts.** Not an extractor, not a diagram generator, not a test harness. A script works for one file and fails silently for the rest; the method says what the script must do and leaves writing it to the work at hand.
 - **It does not unpack a protected archive.** Opening the copy the user holds gets one attempt: one tool, one pass, about ten minutes, then it stops. Not a second tool, not the next layer, never a derived key. Finding text somewhere else is a different move and has no such limit — see case 1.
 - **It does not fetch the game.** No download, no install, no launch, no SteamCMD, no store-page client, no mirror, and no unpacking of a copy the user does not hold. The text is *found*, not acquired — a transcript, a script, subtitles, the novel: something already written down. If none of it exists, that is the answer.
+- **It does not read scans or OCR pages.** A page can be turned into text, but not into who said it: the speaker lives in the drawing. Scanned dialogue comes out as an unattributed stream, and every line then gets attributed by guess.
 - **It does not replace a person for another person.** Cases 3 and 4 can both produce something it is easy to lean on. If that is happening, say it plainly, once. This line is not a disclaimer; it is the one thing most likely to be skipped.
 
 ---
@@ -88,7 +89,9 @@ Before anything else, ask one question — where does the material come from?
 4  Chat logs (WeChat, QQ, screenshots)
 ```
 
-**Assume the user has nothing.** Holding the file is not a condition for A: if the work is known and they would rather not dig, the A path still opens — look for the full text yourself (a script dump, the novel, subtitles), show them what you found, and let them confirm the version before starting. `C` is for a character with no text anywhere, not for a user with empty hands.
+**Assume the user has nothing.** Holding the file is not a condition for route 1: if the work is known and they would rather not dig, route 1 still opens — look for the full text yourself (a script dump, the novel, subtitles), show them what you found, and let them confirm the version before starting. Route 3 is for a character with no text anywhere, not for a user with empty hands.
+
+**Write nothing into the user's project.** Drafts, tables and the final soul live in a scratch folder the user names — never in a code repository or a working tree. State the path before any file is created; the soul is a deliverable, not project material.
 
 **Found, not acquired.** Looking for the text means looking for a page that already contains it. It never means getting hold of the game: no download, no install, no SteamCMD, no store page worked around, no mirror. Those give you a game, not lines, and a game you obtained is not evidence of anything the user said.
 
