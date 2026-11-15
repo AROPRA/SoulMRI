@@ -184,6 +184,17 @@ Expansion        → the model may propose a fact, but only with the user's appr
 
 ---
 
+## Round sizes
+
+The first draft is 600–1,200 characters. Each round adds a wave, and the wave has a size:
+
+```
+complete idea   +800 ~ +1,500 per round   → 2,500–4,500 by round two
+tags only       +400 ~ +700 per round     → 2,000–3,000 by rounds two to four
+fourth round    no floor
+```
+
+**Every round must move the file closer to the person in the user's head.** If a round adds nothing but commas, it did not happen. If the canon runs out before the floor, stop and say so — the floor never licenses invention.
 ## Length: the canon decides, not the target
 
 The first draft is usually 600–1,200 characters. The expansion adds scenes, lines, and daily life until the user's material is used up.

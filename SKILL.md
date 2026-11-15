@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.21.0"
+  version: "1.22.0"
 ---
 
 # SoulMRI
@@ -438,10 +438,38 @@ The first draft is not the end. Tell the user before the loop starts:
 
 > 这一轮改完了。您继续划，还是就到这儿？
 
-**Length pacing.** Default ceiling: 3,000 characters for cases 1, 2 and case 3 with tags only; 4,500 for case 3 with a complete idea. **It does not apply to case 4** — an echo has no length target; it ends where the situations the material supports end. Agree on a different ceiling before the loop if the user wants one.
+**Length pacing.** Each round has a floor; the point of the floor is that every round must move the file closer to the person the user has in mind. Length is a floor, never a reason to pad: if the material cannot reach it, say so and stop — the number does not license invention.
 
-- Round 1: bring the soul to about two-thirds of the ceiling (≈2,000 for 3,000; ≈3,000 for 4,500).
-- Round 2: land within 10% of the ceiling (≥2,700 / ≥4,050) — "close to the top", not "still climbing".
+**Case 1 — the first draft is at least 2,500 characters.**
+
+```
+first draft   ≥ 2,500
+round 1       3,500 ± 500
+round 2       ≥ 4,000
+round 3       no floor; stop when the material is used up
+```
+
+**Case 2 — the first draft is at least 2,500 characters.**
+
+```
+first draft   ≥ 2,500
+round 1       3,000 ± 500
+round 2       ≥ 3,500
+round 3       no floor
+```
+
+**Case 3 — the first draft is 600–1,200; every round adds a wave, and the wave has a size.**
+
+```
+complete idea   draft 600–1,200   round +800 ~ +1,500   → 2,500–4,500 over two rounds
+tags only       draft 600–1,200   round +400 ~ +700     → 2,000–3,000 over two to four rounds
+fourth round and later: no floor
+```
+
+**Case 4 has no length target at all** — an echo ends where the situations the material supports end.
+
+**Count it before you say it.** The number you report comes from the finished file (`wc -m`, or the editor's count), never from memory; say which unit you counted.
+
 
 **Stopping for the day is not accepting the result.** "That's enough for now" closes the session; it does not approve the file. If the wording is ambiguous, ask once: 「今天先到这儿，还是这份就算过了？」 If they stopped for the day, export what exists, write down what is still missing and what would make it thicker, mark the sandbox as not run, and do not present it as finished.
 
