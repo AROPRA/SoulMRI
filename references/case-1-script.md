@@ -53,6 +53,13 @@ disk, not with lines. What you want is a page that already holds the text — an
 **Do not invent an acquisition path.** "Download the game first" is not a step of this method; it is
 the point where the method is supposed to stop and say so.
 
+**Scattered lines are not a full text, and "A" does not survive their absence.** If the search comes
+back with a dozen quotes across five pages and no script, that is neither case 1 nor a thin case 1 —
+say it in one sentence and give the two honest exits: another work, or case 3 from what the user
+remembers, every line marked as theirs. Do not slide into case 2 and build from single-source quotes
+because the user asked for A and A turned out not to exist. The user's choice of path does not create
+a source.
+
 **Searching has no limit; judging a version does.** One site, several sites, another medium, a
 translated collection — all the same move, as long as each page is read before it is trusted and its
 version is recorded. What needs a decision is not "which medium" but **"does the difference make them

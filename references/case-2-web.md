@@ -143,6 +143,11 @@ Not used
 
 **A line appearing in exactly one forum post is UNSURE. It does not enter the body.**
 
+**A label is not a pass.** Writing "single source" beside a line and leaving it in the body is the
+same as not checking at all: the reader cannot tell evidence from guess, and the file's only claim —
+every line can be traced — becomes false. An UNSURE line is omitted, full stop. If that leaves the
+soul thin, the material is thin; say so rather than padding it with labelled doubts.
+
 Two tests; either one passes it:
 
 ```
