@@ -532,7 +532,7 @@ Rewrite each turn three to five ways against both, keep the ones that stay in vo
 
 ## Boundaries
 
-Non-negotiable, especially for case D.
+Non-negotiable, especially for case 4.
 
 ```
 Only his or her words — not yours, not what you assume he or she meant
