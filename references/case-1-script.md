@@ -55,9 +55,9 @@ the point where the method is supposed to stop and say so.
 
 **Scattered lines are not a full text, and "1" does not survive their absence.** If the search comes
 back with a dozen quotes across five pages and no script, that is not case 1 — say it in one sentence,
-**name the route** ("I will work it as case 2: web quotes only, every single-source line dropped, and
-the result will be thin"), and let the user answer once. Do not say "another method" and leave them to
-ask which; do not start writing before they answer.
+**name the route by its number** ("route 1 is out; we go to route 2: web quotes only, every
+single-source line dropped, and the result will be thin"), and let the user answer once. Do not say
+"another method" and leave them to ask which; do not start writing before they answer.
 
 **Searching has no limit; judging a version does.** One site, several sites, another medium, a
 translated collection — all the same move, as long as each page is read before it is trusted and its

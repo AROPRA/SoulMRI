@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.8.1"
+  version: "1.9.0"
 ---
 
 # SoulMRI
@@ -382,15 +382,15 @@ Cases are not sealed. Downgrading is allowed, but **the user must agree to it** 
 
 **Case 4 has no downgrade row.** Thin chat logs — fewer than ~100 messages, fragmentary screenshots — change the *sourcing*, never the product. The output stays an echo, in the case-4 format: what the logs give is the sound, and the user's memory fills the rest, with every line marked as memory rather than as a log. See `references/case-4-chat.md` → "When there is not enough material — borrow, don't switch products".
 
-**Say it plainly when proposing a 1 → 2 downgrade — name the route, not "another method":**
+**Say it plainly when proposing a 1 → 2 downgrade — by route number, and what that route does:**
 
-> Your copy has no full text, so case 1 is out. I will work it as case 2: gather the lines people transcribed, drop every line that has only one source, and the result will be thinner than a script-based soul. Continue?
+> Your copy has no full text, so route 1 is out. We go to **route 2**: I gather the lines people transcribed, drop every line that has only one source, and the result will be thinner than a script-based soul. Continue?
 
-**Never say "换个法子" or "another approach" without saying which one and what it costs.** The user should not have to ask "what method?" — that question means the proposal was not a proposal. Name the case, name the rules that will apply, name the price, then ask once.
+**This is mandatory.** The user chose one of 1–4 at the start, so a downgrade is always *"we go to route 2"* — not "another method", not "a different approach". In the same breath say what route 2 means (web quotes only, single-source lines dropped, thinner result) and ask once. Never say "换个法子" or "another approach" without saying which route and what it costs; a user who has to ask "what method?" means the proposal was never made.
 
-**Say it plainly when proposing a 2 → 3 downgrade:**
+**Say it plainly when proposing a 2 → 3 downgrade — also by route number:**
 
-> Nothing online records what they actually said. Continuing means *you set the direction and I fill the details* — the result will resemble them, but it will not rest on the same evidence. Continue?
+> Nothing online records what they actually said. We go to **route 3**: you set the direction and I fill the details — the result will resemble them, but it will not rest on the same evidence. Continue?
 
 **For thin logs, say the other thing — the product does not change:**
 
@@ -410,7 +410,9 @@ The first draft is not the end. Tell the user before the loop starts:
 
 > 接下来有几轮人工复核：您划哪里不对、哪里不像、哪里要扩，我改。每一轮结束我都会问一次；您满意了我们就停。
 
-**Say plainly that the first draft will be off — and by how much.** It is put together from quotes taken out of order, so its proportions, its emphasis and its silences will not match the person the user knows. Tell them this before they read it: the first version is a draft to be corrected, not a verdict to be accepted, and a large gap is expected rather than a failure.
+**Say plainly that the first draft will be off — and by how much. This is mandatory, every time a first draft is delivered.** It is put together from quotes taken out of order, so its proportions, its emphasis and its silences will not match the person the user knows. Tell them this before they read it: the first version is a draft to be corrected, not a verdict to be accepted, and a large gap is expected rather than a failure. A draft handed over without that warning is not delivered yet.
+
+**Then ask them to work on it, in so many words.** "Which lines are wrong, and how should they have been said?" — and say what you need from them: one line per wrong answer, not a rewrite. The user does not have to know how to write the file; correcting one sentence at a time is their whole job.
 
 **Ask for corrections, not for a grade.** "Does it feel right?" gets a shrug. "What is wrong here, and what should be there instead?" gets material. The user knows the person; they do not have to know how to write the file.
 
