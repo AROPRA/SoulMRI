@@ -31,7 +31,6 @@ Every source online falls into one of four classes. Keep them apart or the resul
 ```
 Original words     what he or she actually said, or the official script   → body text only
 Official setting   officially authored third-person description     → identity facts for 我是谁; never a verdict
-Audience comments  comments under his or her videos or posts        → context only, never quoted
 Fan work           fanfiction, analysis, memes, wiki summaries      → not used at all
 ```
 
@@ -39,15 +38,9 @@ Fan work           fanfiction, analysis, memes, wiki summaries      → not used
 a quotes collection, a wiki voice-line list — is usable as the only source; label it
 `single transcription`. A paraphrase does not enter the body even when three pages repeat it.
 
-**Audience comments are for reading the room, not for the file.** There is no "how others see me" section to put them in, and that is deliberate: what the audience thinks is not the person. Read a few hundred scattered comments to learn the register — in some communities (东雪莲, 时雨羽衣) the teasing is affection — and let that change how you read their words. Nothing from the comment section is quoted into the soul.
-
-**If you can drive the user's logged-in browser, sample from the page console.** Open a video, run a loop over `x/v2/reply` with `credentials:'include'`, collect `member.uname` + `content.message`, then filter. If you cannot, ask the user to export the comment pages; never ask for their password.
-
-**Separate the creator's own replies from the audience.** In a comment sample, the UP主's own comments are his or her words — body text, not audience. Filter them out by account id before calling the rest audience. The sample also skews toward high-like comments; do not present it as the whole audience.
-
 ## If the subject is a real creator, not a fictional character
 
-A real creator breaks the table above: there is no "official setting" and no "other characters". His or her own posts and videos are the body; the comment section is context for reading the room, never a column; fan art and fan fiction stay out. The sampled body uses case 4's boundaries — public words only, no inference about private life, private use only. The advancement layer is separate (see Advancing life at the end); it is private and marked. Do not publish the soul as a character card of a real person. Expect a thinner soul than case 1; that is the material, not a failure.
+A real creator breaks the table above: there is no "official setting" and no "other characters". His or her own posts and videos are the body; fan art, fan fiction and audience comments stay out. The sampled body uses case 4's boundaries — public words only, no inference about private life, private use only. The advancement layer is separate (see Advancing life at the end); it is private and marked. Do not publish the soul as a character card of a real person. Expect a thinner soul than case 1; that is the material, not a failure.
 
 ### When the material is live talk: sample the recordings
 
@@ -159,8 +152,6 @@ Optional, context only — never quoted into the file
   □ Official character introduction
   □ Official artbook or setting-book excerpts
   □ Other characters' remarks about him or her (verbatim, not paraphrased)
-  □ Audience comments, read for the room's register
-    (sampled across many videos; they change how you read the lines, not what you write)
 
 Not used
   □ Fan fiction, analysis, wiki summaries
@@ -216,21 +207,6 @@ User: "I think he or she'd say something like this"      → NOT a quote. Does n
 ```
 
 **A separate section called "What I remember of him or her"** may hold the user's memories — first person, but the subject is the *user* ("I remember him or her saying…"). Never mixed into the body.
-
----
-
-## Loading into a consumer chat client
-
-A soul file is not a system prompt. If the client has no persona field (a phone app, a plain chat box), paste the soul as the first message and add a short load instruction:
-
-```
-first person; do not summarize; do not list advice; do not invent experiences;
-do not explain your own way of speaking — it is instinct, not a script.
-```
-
-**Test on the target client, not only in the builder's environment.** Consumer apps have a stronger assistant prior: without the load instruction, a case-2 soul drifts into a helpful coach within two turns.
-
-**The "how I talk" section is the weakest point here.** Its summary sentences are descriptions; a chat model will perform them or explain them ("你看，我这人就是这样"). Prefer the quotes. If the summaries stay, pair them with the "do not explain" rule — and expect it to leak once before it settles.
 
 ---
 
