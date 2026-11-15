@@ -9,12 +9,12 @@ Read this when there is no text, no archive, and nothing online — or when case
 ## Two entry branches
 
 ```
-A · the user has a complete idea
+complete idea · the user has one
     → first draft from the user's answers
     → 2 rounds of review/expansion
     → target 2,500–4,500 characters
 
-B · the user has no idea
+tags only · the user has no idea yet
     → ask for 2–4 tags
     → first draft: turn each tag into a speech rule, not an adjective
     → 2–4 rounds of review/expansion
@@ -23,7 +23,7 @@ B · the user has no idea
 
 **The targets are for the finished soul, not the first draft.** The first draft stays thin; the rounds add material. If the user runs out of answers and the soul is still short, stop — do not pad.
 
-**In branch B, a tag is a seed, not a trait.** 「无口、安静」 does not become "he or she is quiet"; it becomes: one or two words to people, a nod instead of an answer, full sentences only to the cat, one rare full sentence when it matters. Convert every tag into rules and scenes before writing.
+**In the tags-only branch, a tag is a seed, not a trait.** 「无口、安静」 does not become "he or she is quiet"; it becomes: one or two words to people, a nod instead of an answer, full sentences only to the cat, one rare full sentence when it matters. Convert every tag into rules and scenes before writing.
 
 ---
 

@@ -82,10 +82,10 @@ This method does not make a model careful. It makes a user **able to check**. Pr
 Before anything else, ask one question — where does the material come from?
 
 ```
-A  A full script, novel, subtitle file, or game text
-B  Only what can be found online
-C  Nothing — building from scratch
-D  Chat logs (WeChat, QQ, screenshots)
+1  A full script, novel, subtitle file, or game text
+2  Only what can be found online
+3  Nothing — building from scratch
+4  Chat logs (WeChat, QQ, screenshots)
 ```
 
 **Assume the user has nothing.** Holding the file is not a condition for A: if the work is known and they would rather not dig, the A path still opens — look for the full text yourself (a script dump, the novel, subtitles), show them what you found, and let them confirm the version before starting. `C` is for a character with no text anywhere, not for a user with empty hands.
@@ -94,7 +94,7 @@ D  Chat logs (WeChat, QQ, screenshots)
 
 **Searching is not the same as digging.** Looking across sites and media — a script, subtitles, the novel, a translation, a quote collection — is the fallback, and it is not limited by the one-attempt rule; that rule governs opening the copy the user holds. What searching must never become is another way to obtain the game.
 
-**Then, and only for A and B, follow up with three more:**
+**Then, and only for 1 and 2, follow up with three more:**
 
 ```
 1. Who are you writing?      ← the name
@@ -102,7 +102,7 @@ D  Chat logs (WeChat, QQ, screenshots)
 3. Which version?            ← skippable
 ```
 
-**C and D skip questions 2 and 3 entirely.** An original character and a real person have no source work and no versions. Ask only what to call them — and if they are a real person, ask what *you* called them, since that is what belongs in the soul.
+**3 and 4 skip questions 2 and 3 entirely.** An original character and a real person have no source work and no versions. Ask only what to call them — and if they are a real person, ask what *you* called them, since that is what belongs in the soul.
 
 **Question 3 is not "which medium" — it is "does the difference make them a different person".** Ask only when the answer changes the product:
 
@@ -139,30 +139,30 @@ none         I would rather not touch files at all
 Once the node is chosen, one more question narrows it:
 
 ```
-Q2 (if A)  What kind of material is it?
+IF 1 · What kind of material is it?
            structured game export (speaker tags, scene IDs) → write a tailored extractor
-           prose (novel / screenplay / transcript book)      → choose a reading path (Q2a)
+           prose (novel / screenplay / transcript book)      → choose a reading path (the prose question below)
 
-Q2a (if A · prose)  High precision, or fast?
+IF 1 · prose · High precision, or fast?
            high  → chunk the text, read every chunk in order, then light review
            fast  → script-extract, then review every extracted line against the source
 
-Q2b (if A)  Does the text contain narration about them, or only their lines?
+IF 1 · Does the text contain narration about them, or only their lines?
            yes → full version, every section can be filled
            no  → reduced version, "how others see me" stays empty
 
-Q3 (if B)  Did you find words they actually said, or descriptions about them?
+IF 2 · Did you find words they actually said, or descriptions about them?
            actual lines → usable in the body
            descriptions → only ever in "how others see me"
 
-Q4 (if D)  How many messages, and is it text export or screenshots?
+IF 4 · How many messages, and is it text export or screenshots?
            under ~100 → too thin to rebuild the voice from logs alone;
                         borrow case 3's sourcing, but the product stays an echo
 ```
 
 **Chunking is not optional for the high-precision path.** A 70k-character transcript already fills a working context; a 2M-character novel will not fit at all. Cut on scene or chapter boundaries, keep the line numbers, and read the chunks in order. A model that "gets an overview" of a novel has already summarized it — and a summary is an interpretation.
 
-**If B, check for a full source before accepting the web-only path.** A game package, a complete script, anime subtitles, or the original novel promotes the job to case 1. Case 2 is the fallback; do not build a soul from wiki summaries when the script is one search away.
+**If 2, check for a full source before accepting the web-only path.** A game package, a complete script, anime subtitles, or the original novel promotes the job to case 1. Case 2 is the fallback; do not build a soul from wiki summaries when the script is one search away.
 
 **These are not just sorting — they teach.** By answering them the user learns what this method cares about: the difference between *the source* and *a description of the source*.
 
@@ -183,10 +183,10 @@ Read the matching reference before proceeding:
 
 | Situation | Reference |
 |---|---|
-| A · full script or game files | [references/case-1-script.md](references/case-1-script.md) |
-| B · publicly documented character | [references/case-2-web.md](references/case-2-web.md) |
-| C · original character | [references/case-3-original.md](references/case-3-original.md) |
-| D · real person, chat logs — builds an **echo**, not a memoir; thin logs borrow case 3's sourcing and still produce an echo | [references/case-4-chat.md](references/case-4-chat.md) |
+| 1 · full script or game files | [references/case-1-script.md](references/case-1-script.md) |
+| 2 · publicly documented character | [references/case-2-web.md](references/case-2-web.md) |
+| 3 · original character | [references/case-3-original.md](references/case-3-original.md) |
+| 4 · real person, chat logs — builds an **echo**, not a memoir; thin logs borrow case 3's sourcing and still produce an echo | [references/case-4-chat.md](references/case-4-chat.md) |
 | — · writing the extractor for a structured format | [references/writing-extractors.md](references/writing-extractors.md) |
 
 ---
@@ -360,7 +360,7 @@ not written           ellipsis_rate: 0.90
 
 ## Upgrading is automatic
 
-**B → A** when a full source turns up: a game package that can be unpacked, a complete script, anime subtitles, or the original novel. Case 2 is the fallback; if the text exists, go get it. Do not ask the user to choose between "web" and "script" — they came for a soul, not a taxonomy.
+**2 → 1** when a full source turns up: a game package that can be unpacked, a complete script, anime subtitles, or the original novel. Case 2 is the fallback; if the text exists, go get it. Do not ask the user to choose between "web" and "script" — they came for a soul, not a taxonomy.
 
 The check happens at the start of case 2: before collecting wiki summaries, spend ten minutes looking for the original medium (novel / manga / anime / game), not just the character's name.
 
@@ -371,19 +371,18 @@ The check happens at the start of case 2: before collecting wiki summaries, spen
 Cases are not sealed. Downgrading is allowed, but **the user must agree to it** — because the nature changes from *extraction* to *co-creation*. **Downgrades go one step at a time:** 1 → 2, then 2 → 3 if case 2 also fails. Never jump 1 → 3.
 
 ```
-A → 2  when: the work is known, but no full text exists anywhere
+1 → 2  when: the work is known, but no full text exists anywhere
              (the search returns scattered quotes and nothing to table)
-2 → 3  when: case 2 also yields fewer than 3 real lines, or everything is description
 
-B → C  when: 30 minutes of searching yields fewer than 3 real lines
+2 → 3  when: fewer than 3 real lines after 30 minutes of searching
              everything found is description, no quotes
              sources contradict each other with no citations
              or the user simply says "never mind, I'll just tell you"
 ```
 
-**D has no downgrade row.** Thin chat logs — fewer than ~100 messages, fragmentary screenshots — change the *sourcing*, never the product. The output stays an echo, in the case-4 format: what the logs give is the sound, and the user's memory fills the rest, with every line marked as memory rather than as a log. See `references/case-4-chat.md` → "When there is not enough material — borrow, don't switch products".
+**Case 4 has no downgrade row.** Thin chat logs — fewer than ~100 messages, fragmentary screenshots — change the *sourcing*, never the product. The output stays an echo, in the case-4 format: what the logs give is the sound, and the user's memory fills the rest, with every line marked as memory rather than as a log. See `references/case-4-chat.md` → "When there is not enough material — borrow, don't switch products".
 
-**Say it plainly when proposing a B → C downgrade:**
+**Say it plainly when proposing a 2 → 3 downgrade:**
 
 > Nothing online records what they actually said. Continuing means *you set the direction and I fill the details* — the result will resemble them, but it will not rest on the same evidence. Continue?
 
@@ -415,7 +414,7 @@ The first draft is not the end. Tell the user before the loop starts:
 
 > 这一轮改完了。您继续划，还是就到这儿？
 
-**Length pacing.** Default ceiling: 3,000 characters for cases 1, 2 and 3B; 4,500 for 3A. **It does not apply to case 4** — an echo has no length target; it ends where the situations the material supports end. Agree on a different ceiling before the loop if the user wants one.
+**Length pacing.** Default ceiling: 3,000 characters for cases 1, 2 and case 3 with tags only; 4,500 for case 3 with a complete idea. **It does not apply to case 4** — an echo has no length target; it ends where the situations the material supports end. Agree on a different ceiling before the loop if the user wants one.
 
 - Round 1: bring the soul to about two-thirds of the ceiling (≈2,000 for 3,000; ≈3,000 for 4,500).
 - Round 2: land within 10% of the ceiling (≥2,700 / ≥4,050) — "close to the top", not "still climbing".
@@ -512,11 +511,11 @@ A soul can be accurate and still unusable. Test it the way it will be used:
 
 A soul can pass the sandbox and still sound wrong: it knows the story and answers in the wrong voice. **When the user says "she wouldn't say it like that", this is the loop to run** — not another rewrite from memory. The cheapest material to fit against is already in the table — the questions someone asked them, and the answers they gave.
 
-**Round A · replay the source's exchanges.** Take five to ten exchanges where another character asked something and they answered. Ask the soul the same questions, in the same order, without showing the answers. Put each answer beside the original and read the difference aloud: longer, flatter, explaining where the original refused, a slogan where the original had a name.
+**Round 1 · replay the source's exchanges.** Take five to ten exchanges where another character asked something and they answered. Ask the soul the same questions, in the same order, without showing the answers. Put each answer beside the original and read the difference aloud: longer, flatter, explaining where the original refused, a slogan where the original had a name.
 
-**If the material kept only their lines, Round A cannot run.** A quote collection, a list of famous lines, a voice-file index — none of them carries the question that produced the answer. Say so in one line and go to Round B; do not invent the questions.
+**If the material kept only their lines, Round 1 cannot run.** A quote collection, a list of famous lines, a voice-file index — none of them carries the question that produced the answer. Say so in one line and go to Round 2; do not invent the questions.
 
-**Round B · ask what the source never covered.** Take three to five questions the material does not answer — ones this user would actually ask. Ask them, show the answers, and ask the user for one line each: *how should this have been said?* Not a rule, not a paragraph; one line.
+**Round 2 · ask what the source never covered.** Take three to five questions the material does not answer — ones this user would actually ask. Ask them, show the answers, and ask the user for one line each: *how should this have been said?* Not a rule, not a paragraph; one line.
 
 **Then fit both, in the same pass, without asking again.** The moment the user's lines arrive, two fittings start together:
 

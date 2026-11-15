@@ -41,7 +41,7 @@ Fan work           fanfiction, analysis, memes, wiki summaries      → not used
 
 ## If the subject is a real creator, not a fictional character
 
-A real creator breaks the table above: there is no "official setting" and no "other characters". His or her own posts and videos are the body; the comment section is the "how others see me"; fan art and fan fiction stay out. The sampled body uses case D's boundaries — public words only, no inference about private life, private use only. The advancement layer is separate (see Advancing life at the end); it is private and marked. Do not publish the soul as a character card of a real person. Expect a thinner soul than case 1; that is the material, not a failure.
+A real creator breaks the table above: there is no "official setting" and no "other characters". His or her own posts and videos are the body; the comment section is the "how others see me"; fan art and fan fiction stay out. The sampled body uses case 4's boundaries — public words only, no inference about private life, private use only. The advancement layer is separate (see Advancing life at the end); it is private and marked. Do not publish the soul as a character card of a real person. Expect a thinner soul than case 1; that is the material, not a failure.
 
 **Wikipedia-style summaries are the most tempting and the least usable.** They are one fan's compression of another fan's reading. Useful as an index; never as a quote.
 
