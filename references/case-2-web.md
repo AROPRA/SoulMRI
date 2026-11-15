@@ -61,6 +61,10 @@ For a VTuber or a streamer, the written transcript usually does not exist and th
 
 **What the transcript may do and what it may not.** It is the best evidence of *how* they talk — length, fillers, rhythm, what they refuse to answer — and it is where the scenes are. A line quoted from it carries `(ASR)`; a line quoted from it never carries a timestamp or a "verified" mark, because nobody checked it. **Pick scenes, not quotable one-liners**: a reaction, a refusal, a joke that landed tells you more than ten clean sentences.
 
+**A keyword match is not a speaker.** A search for the name drags in collabs, reaction videos and other people's streams. Before a sampled segment is used, open its upload page: who uploaded it, and does the title or description say it is them? A clip channel is fine when the description names the stream it came from; a video *about* them is not. When in doubt, drop the segment — one wrong voice in the file is worse than a thin file.
+
+**Fan imitations are fan work.** A "how to sound like them" tutorial, an AI cover, an imitator's clip: these never enter, not even as evidence of how they talk.
+
 
 **Wikipedia-style summaries are the most tempting and the least usable.** They are one fan's compression of another fan's reading. Useful as an index; never as a quote.
 
