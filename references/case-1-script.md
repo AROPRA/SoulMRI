@@ -54,11 +54,10 @@ disk, not with lines. What you want is a page that already holds the text — an
 the point where the method is supposed to stop and say so.
 
 **Scattered lines are not a full text, and "A" does not survive their absence.** If the search comes
-back with a dozen quotes across five pages and no script, that is neither case 1 nor a thin case 1 —
-say it in one sentence and give the two honest exits: another work, or case 3 from what the user
-remembers, every line marked as theirs. Do not slide into case 2 and build from single-source quotes
-because the user asked for A and A turned out not to exist. The user's choice of path does not create
-a source.
+back with a dozen quotes across five pages and no script, that is not case 1 — say it in one sentence
+and let the user choose: work it as case 2 (its own rules apply, and every single-source line is still
+omitted), or stop. Do not start writing before they choose, and do not treat their choice of A as a
+source.
 
 **Searching has no limit; judging a version does.** One site, several sites, another medium, a
 translated collection — all the same move, as long as each page is read before it is trusted and its
@@ -362,4 +361,4 @@ Once the sampled body is stable, the soul may include events after the source or
 
 ## Exit condition
 
-**If you cannot build the intermediate table at all** — no speaker tags, no scene breaks, no way to attribute a line — then you are not in case 1. Drop to case 2 if the work is known, or case 3 if it is not, and say so plainly.
+**If you cannot build the intermediate table at all** — no speaker tags, no scene breaks, no way to attribute a line — then you are not in case 1. Say so plainly, and drop **one step only**: to case 2 if the work is known, with the user's agreement. If case 2 also fails (fewer than three real lines, everything description), only then does the 2 → 3 step apply, again with agreement. If the work is not known at all you were never in case 1 — that is case 3 from the start. **Never jump 1 → 3.**

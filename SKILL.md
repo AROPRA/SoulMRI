@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.7.1"
+  version: "1.7.2"
 ---
 
 # SoulMRI
@@ -368,9 +368,13 @@ The check happens at the start of case 2: before collecting wiki summaries, spen
 
 ## Downgrading between cases
 
-Cases are not sealed. Downgrading is allowed, but **the user must agree to it** — because the nature changes from *extraction* to *co-creation*.
+Cases are not sealed. Downgrading is allowed, but **the user must agree to it** — because the nature changes from *extraction* to *co-creation*. **Downgrades go one step at a time:** 1 → 2, then 2 → 3 if case 2 also fails. Never jump 1 → 3.
 
 ```
+A → 2  when: the work is known, but no full text exists anywhere
+             (the search returns scattered quotes and nothing to table)
+2 → 3  when: case 2 also yields fewer than 3 real lines, or everything is description
+
 B → C  when: 30 minutes of searching yields fewer than 3 real lines
              everything found is description, no quotes
              sources contradict each other with no citations
