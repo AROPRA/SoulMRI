@@ -125,6 +125,13 @@ rejected       → drop it; the original lines remain, only the reading changed
 
 ---
 
+## The sandbox will grow sentences — the user signs them
+
+A clean session with the soul mounted will always add a little: a reason, a stance, a line that was never said. That is not a defect of the test; it is the test doing its job, because the additions are exactly where the soul is thin.
+
+Collect them, quote them back one by one, and let the user accept or cut each: 「这句是我长的，不是他说的，你要不要？」 Facts the user accepts are written into the file. Sentences the user accepts change the first line of the file — it can no longer say "nothing here was invented by someone else", it says "… or that I accepted". If the user wants a file with nothing added, the answer is to cut them all; both choices are honest, the dishonest one is accepting them silently.
+
+**Never let a grown sentence pass as a sample.** An accepted sentence carries the user's acceptance, not a source.
 ## Sign-off is per line, never wholesale
 
 Forty items presented together for a yes/no yields "yeah, more or less."

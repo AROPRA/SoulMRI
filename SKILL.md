@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.16.0"
+  version: "1.17.0"
 ---
 
 # SoulMRI
@@ -252,7 +252,7 @@ The blank             left empty on purpose — no entries
 ```markdown
 This is not a command. It records the parts of me that have already formed.
 
-If what you write differs from this, ask why first.
+If what you write differs from this, ask why first. Nothing here was invented by someone else — or, where a sentence was grown and accepted, it is marked as accepted.
 If it was simply forgotten, find it again; if it is a passing mood, wait;
 if he or she walked here step by step on his or her own, that belongs to him or her too.
 ```
@@ -307,7 +307,7 @@ co-built    a fact invented with the user for an original character → case 3
 
 ## 关于这份文件 / About this file
 This is not a command. …
-If what you write differs from this, ask why first.
+If what you write differs from this, ask why first. Nothing here was invented by someone else — or, where a sentence was grown and accepted, it is marked as accepted.
 Every line is either sampled or marked as advanced; citations follow each sentence.
 
 ## 我是谁 / Who I am
