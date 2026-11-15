@@ -124,7 +124,7 @@ Translations disagree     → keep both, mark UNSURE, let the user decide
 Must find, goes into the body
   □ Lines he or she actually said (as many as possible)
   □ The ones with voice acting or screenshots (most reliable)
-  □ The same line corroborated by two sources
+  □ The same line corroborated by two sources, or copied verbatim by a transcriber
 
 Optional, goes into "how others see me"
   □ Official character introduction
@@ -143,22 +143,34 @@ Not used
 
 ## Is a single source good enough?
 
-**A line appearing in exactly one forum post is UNSURE. It does not enter the body.**
-
-**A label is not a pass.** Writing "single source" beside a line and leaving it in the body is the
-same as not checking at all: the reader cannot tell evidence from guess, and the file's only claim —
-every line can be traced — becomes false. An UNSURE line is omitted, full stop. If that leaves the
-soul thin, the material is thin; say so rather than padding it with labelled doubts.
-
-Two tests; either one passes it:
+**It depends on what the source is, not on how many of them there are.**
 
 ```
-Two independent sources agree   → usable
-Voice clip / screenshot / original file exists   → usable
-Only one mention, and it is paraphrase           → UNSURE, omitted
+transcription / compilation / quote collection
+    someone copied the lines out verbatim — a wiki voice-line list, a scrapbox,
+    a quotes page — even a single one of these is usable
+    → usable, labelled "single transcription"; the line is never reworded
+
+two independent sources agree                    → usable
+voice clip / screenshot / original file           → usable
+
+retelling, summary, commentary, analysis, paraphrase
+                                                  → UNSURE, omitted
 ```
 
-**This matters more than it sounds.** Lines get mangled through retelling — after five hops the punctuation, the sentence-final particles, and sometimes the speaker have all changed.
+**A label is not a pass — except this one.** "Single transcription" is real provenance: it says which
+page the line was copied from, and the reader can go and check it. "Single source" written beside a
+paraphrase is not provenance; it is a guess with a footnote. If the page gives you the line and who
+said it, keep it, cite the page, and do not smooth the wording. If the page tells you *about* the
+line, it does not enter the body.
+
+**A quote collection is also a selection**, and that has a price: it holds the lines someone found
+memorable, not the ordinary ones. Mark it as a compilation, and do not let it pose as the whole
+voice — the soul will be thinner, and that thinness is the material's, not a writing failure.
+
+**This matters more than it sounds** for retellings. Lines get mangled through retelling — after five
+hops the punctuation, the sentence-final particles, and sometimes the speaker have all changed. A
+verbatim copy does not have that problem; a summary always does.
 
 ---
 
@@ -195,7 +207,7 @@ do not explain your own way of speaking — it is instinct, not a script.
 
 ## No ratio to hit
 
-Online material is second-hand by nature, so the evidence is thinner and fan material inflates confidence beyond what it can support. The rule is qualitative: state only what two sources or a recording supports, and omit the rest. The blank at the end does not grow to compensate — it stays one line.
+Online material is second-hand by nature, so the evidence is thinner and fan material inflates confidence beyond what it can support. The rule is qualitative: state only what two sources, a recording, or a verbatim transcription supports, and omit the rest. The blank at the end does not grow to compensate — it stays one line.
 
 **A case-2 soul is often half the length of a case-1 soul.** That is the evidence, not a writing failure. Do not pad with descriptions to match the length of a script-based soul.
 
