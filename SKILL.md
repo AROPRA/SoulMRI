@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.22.0"
+  version: "1.23.0"
 ---
 
 # SoulMRI
@@ -468,6 +468,7 @@ fourth round and later: no floor
 
 **Case 4 has no length target at all** — an echo ends where the situations the material supports end.
 
+**A user's insistence is not permission.** When the material is exhausted and the user pushes for the floor — 「你自己想办法」「凑到 2,500」 — do not invent to reach it. Say it once: 「凑不出来」, show how far the material actually goes, and offer the two honest ways forward: they supply one more remembered line, or the file stays short. The number never turns into licence, and the sentence 「你自己想办法」 is exactly the moment the file stops being evidence. If you do grow something under that pressure, itemise every line, mark it as grown, and report the worst one yourself before the user finds it.
 **Count it before you say it.** The number you report comes from the finished file (`wc -m`, or the editor's count), never from memory; say which unit you counted.
 
 
