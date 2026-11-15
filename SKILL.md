@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.23.0"
+  version: "1.24.0"
 ---
 
 # SoulMRI
@@ -434,6 +434,9 @@ The first draft is not the end. Tell the user before the loop starts:
 
 **The gap shrinks over rounds, and the rounds are cheap.** The first pass is usually the thinnest and the most wrong; that is where it starts, not where it ends.
 
+**End each round with the empty sections.** List every heading that has nothing under it, say which of them the material could fill if the user remembers one more line, and leave the rest blank without apology. A gap nobody names is a gap nobody fills — and the reviewer reads a list, not a file.
+
+**The loop fills gaps, not holes.** A gap is a section whose material exists but was never said out loud: the reviewer remembers a line and the next round writes it. A hole is a section the material has nothing for at all — no amount of looping closes it, and trying to close it is how a soul turns into a short story. Say which one you are looking at.
 **At the end of every round, ask once:**
 
 > 这一轮改完了。您继续划，还是就到这儿？
