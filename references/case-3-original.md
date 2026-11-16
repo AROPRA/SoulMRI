@@ -257,6 +257,9 @@ In cases 1 and 2, an objection means going back to the source. Here the objectio
 
 ## After the soul: 你眼中的我
 
+**Their sentence goes in as written.** If the pronoun or the line break reads wrong inside a first-person file, say so and let them choose — 「你写的是『她想变成的』，放进文件会像旁白，要不要改成第一人称？」 — never change it and report afterwards. The column is theirs; a silent edit is the one thing that makes it not theirs.
+
+
 When the soul is done, stop. Ask the user to write the 「你眼中的我」 section themselves:
 
 > 这一栏留给你——你怎么看TA？

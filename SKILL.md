@@ -345,6 +345,7 @@ Every line is either sampled or marked as advanced; citations follow each senten
 
 **The template uses both languages on purpose.** The Chinese name is what the file says; the English name is for reading the method. Keep both lines in the file — a reader who knows only one of the two should still be able to find their way.
 
+**The user''s words go in verbatim.** When they write the 「你眼中的我」 line, or hand you a sentence to keep, it enters the file as they wrote it. If it reads wrong in a first-person file — a pronoun, a punctuation mark, a line that should split in two — ask once and let them decide; do not quietly fix it. It is the same rule as a quote: what they wrote is the record, and a silent correction makes the record yours.
 **A number you report comes from the file.** When you say how long the soul is, count it — `wc -m` on the finished file, or the editor's own count — and say what you counted (characters, or Chinese characters). A remembered number is a guess wearing a number's clothes, and the reader will check it.
 **Keep every heading, even the empty ones.** A section the source cannot support stays in the file with nothing under it — an empty section is better than an invented one, and a missing one is a hole the next reader fills. Only the optional block may be absent, and only when the material has nothing for it.
 
