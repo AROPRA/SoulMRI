@@ -21,7 +21,7 @@ SKILL.md                    the skill itself
 references/
   case-1-script.md          extracting from a script
   case-2-web.md             extracting from web pages
-  case-3-original.md        extracting from original writing
+  case-3-original.md        building an original character — three entry branches
   case-4-chat.md            extracting from chat logs — an echo, not a memoir
   writing-extractors.md     how to write the extractors
   case1-flow.png            case 1 at a glance
