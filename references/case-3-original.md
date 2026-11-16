@@ -21,8 +21,9 @@ tags only · the user has no idea yet
     → target 2,000–3,000 characters
 
 modeled on someone · the user has a reference
-    → ask what the reference is, and which layer of it they want
-    → first draft: the reference's rules, worn by a new person
+    → ask which layer of them they mean (talk / bearing / how they treat people / how life went)
+    → light research, then five to ten tags
+    → the user keeps, crosses out or adds; then it is the tags route
     → 2 rounds of review/expansion
     → target 2,500–4,500 characters
 ```
