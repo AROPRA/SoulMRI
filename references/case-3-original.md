@@ -32,7 +32,7 @@ modeled on someone · the user has a reference
 
 **In the tags-only branch, a tag is a seed, not a trait.** 「无口、安静」 does not become "he or she is quiet"; it becomes: one or two words to people, a nod instead of an answer, full sentences only to the cat, one rare full sentence when it matters. Convert every tag into rules and scenes before writing.
 
-**A reference is a starting point, not a dossier.** When the user says 「像某某」, do not study that person exhaustively. Ask first which layer of them they mean — how they talk, how they carry themselves, how they treat people, or how their life went — then do a **light** search: ten minutes, a few pages, enough to see the shape.
+**A reference is a starting point, not a dossier.** When the user says 「像某某」, do not study that person exhaustively. Ask first which layer of them they mean — how they talk, how they carry themselves, how they treat people, or how their life went — then do a **light** search: seconds of it, a few pages, enough to see the shape.
 
 **Turn what you learn into five to ten tags and hand them over.** The user crosses out what is wrong, keeps what fits, adds what is missing. What survives goes into the tags-only branch, and the same rules apply: every tag becomes a speech rule or a scene, never an adjective.
 
@@ -40,11 +40,21 @@ modeled on someone · the user has a reference
 
 ## When the user cannot answer
 
-「不知道」 is a valid answer, but a run of them ends the session. Three moves, in order:
+**Ask for events, not traits.** The answer you want is a thing that happened, in five fields:
 
-1. **Change the question, not the subject.** 「她是什么样的人」 gets a shrug; 「上一次有人让她难堪，她当时说了什么」 gets a sentence. Ask about the last time something happened, not about a trait.
-2. **Offer two candidates.** 「她是那种把气咽下去的人，还是当场就顶回去的人？」 A wrong option is easier to reject than a blank is to fill, and the rejection is material too.
-3. **Fall back to the last time it happened.** 「上一次有人这么干，她做了什么？」 Scenes come back when traits do not.
+```
+发生了什么   what happened
+起因         what set it off
+经过         how it went
+结果         how it ended
+内心想法     what he or she was thinking — in his or her own words when possible
+```
+
+**Ask for three or more.** One event gives a scene; three give a person. Say the number out loud so the user knows how much to give.
+
+**If the user cannot think of one, hand the choice back as options.** Draft three or four candidate events from whatever is already known — the tags, the reference, one line they said — and let the user keep one, cross one out, or correct one. Choosing is easier than recalling, and a crossed-out option is material too.
+
+**Only then fall back to smaller questions, and still about an event:** 「上一次有人让她难堪，她当时做了什么」 — not 「她是什么样的人」.
 
 **Record every 「不知道」 next to its question.** That list is the shape of the hole; a later round may find one of them, and a hole you named is honest, while a hole you forgot gets filled by the model.
 
