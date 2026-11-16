@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SoulMRI · 认出，而不是扮演</title>
+<meta name="description" content="一份用「提取」而不是「编造」来构建角色卡（人格卡）的方法。第一人称，每句带出处，末尾留白。四个证据案例：剧本、网上资料、原创、聊天记录。聊天记录做出来的不是回忆录，是回响。">
+<meta name="keywords" content="角色卡,人格卡,性格,人设,灵魂,提示词,聊天记录,回响,soul,character card,persona">
+<meta property="og:title" content="SoulMRI · 认出，而不是扮演">
+<meta property="og:description" content="把「写角色卡」从创作变成提取。每句带出处，末尾留白。">
+<style>
+  :root {
+    --paper: #f7f3ea;
+    --ink: #23201c;
+    --dust: #8a8279;
+    --line: #ddd5c7;
+    --stamp: #a4432f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #171614;
+      --ink: #e8e2d6;
+      --dust: #8b847a;
+      --line: #33302b;
+      --stamp: #c9603f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font: 17px/1.85 "Noto Serif SC", "Songti SC", Georgia, "Microsoft YaHei", serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 96px 28px 120px; }
+  @media (max-width: 640px) { .wrap { padding: 56px 22px 80px; } }
+
+  h1 { font-size: 2.4rem; line-height: 1.25; margin: 0 0 .2em; letter-spacing: .02em; }
+  h1 small { display: block; font-size: .95rem; color: var(--dust); letter-spacing: .12em; margin-top: .7em; font-family: "Microsoft YaHei", system-ui, sans-serif; }
+  .lead { font-size: 1.12rem; color: var(--ink); margin: 2em 0 2.4em; }
+  .lead em { font-style: normal; border-bottom: 2px solid var(--stamp); padding-bottom: .05em; }
+
+  h2 {
+    font-size: .82rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--dust); font-family: "Microsoft YaHei", system-ui, sans-serif;
+    margin: 3.2em 0 1.2em; font-weight: 600;
+  }
+  h2::after { content: ""; display: block; width: 32px; height: 1px; background: var(--line); margin-top: .8em; }
+
+  p { margin: 0 0 1.2em; }
+
+  .choice { margin: 0 0 1.4em; padding-left: 1.6em; position: relative; }
+  .choice::before {
+    content: counter(c); counter-increment: c;
+    position: absolute; left: 0; top: .1em;
+    font-family: Georgia, serif; font-size: .85rem; color: var(--stamp);
+  }
+  .choices { counter-reset: c; }
+  .choice b { font-weight: 600; }
+
+  table { width: 100%; border-collapse: collapse; margin: 0 0 1.4em; font-size: .95rem; }
+  th, td { text-align: left; padding: .55em .4em; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; color: var(--dust); font-size: .8rem; letter-spacing: .08em; }
+  td:first-child { width: 3em; color: var(--dust); font-family: Georgia, serif; }
+  tr:last-child td { border-bottom: none; }
+  td.echo { color: var(--stamp); font-weight: 600; }
+
+  blockquote {
+    margin: 2em 0; padding: 1.2em 1.4em;
+    border-left: 3px solid var(--stamp);
+    background: rgba(164, 67, 47, .04);
+    font-size: .98rem;
+  }
+  blockquote p:last-child { margin-bottom: 0; }
+
+  .links { margin-top: 3.2em; padding-top: 1.6em; border-top: 1px solid var(--line); font-family: "Microsoft YaHei", system-ui, sans-serif; font-size: .95rem; }
+  .links a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); margin-right: 1.6em; }
+  .links a:hover { border-bottom-color: var(--stamp); }
+  .foot { margin-top: 3em; font-size: .82rem; color: var(--dust); font-family: "Microsoft YaHei", system-ui, sans-serif; }
+  .foot a { color: var(--dust); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>
+    认出，而不是扮演
+    <small>SOULMRI · RECOGNIZE, DON'T ACT</small>
+  </h1>
+
+  <p class="lead">
+    <em>把「写角色卡」从创作变成提取。</em>
+    不写一个角色，去找他/她<strong>已经说过的</strong>话——第一人称，每句带出处，末尾留白。
+  </p>
+
+  <h2>为什么</h2>
+  <p>
+    现有的角色卡、人格卡，大多还停留在「设定表」：第三人称，列一堆属性、性格、爱好，模型拿到之后只能去演。
+    SoulMRI 想要另一种东西——让模型<strong>认出</strong>这个人，而不是<strong>表演</strong>这个人；
+    也让没写过设定、不会写提示词的人，能写出自己想要的那张卡。
+  </p>
+  <p>
+    名字里的 soul，是「灵魂」——但我们写的不是玄学意义上的灵魂，是一个人怎么说话、怎么判断、怎么在乎。
+  </p>
+
+  <h2>三个相反的选择</h2>
+  <div class="choices">
+    <p class="choice"><b>全程第一人称。</b>角色卡以「我」说话，不是「他性格内向」。</p>
+    <p class="choice"><b>每句带出处，或者明确标成编的。</b>「我信这句」和「真有人这么说过」，不是一回事。</p>
+    <p class="choice"><b>末尾留白，不是未知清单。</b>没找到的不写；空着比编一个更诚实。</p>
+  </div>
+
+  <h2>四条证据路</h2>
+  <table>
+    <tr><th></th><th>材料</th><th>产出</th></tr>
+    <tr><td>1</td><td>剧本 / 小说 / 字幕</td><td>soul</td></tr>
+    <tr><td>2</td><td>网上能找到的资料</td><td>soul</td></tr>
+    <tr><td>3</td><td>从零开始写</td><td>soul</td></tr>
+    <tr><td>4</td><td>真人的聊天记录</td><td class="echo">echo（回响）</td></tr>
+  </table>
+  <p>
+    第四条是故意不一样的。真人的聊天记录做出来的不是回忆录，是一份<strong>回响</strong>：
+    它回答你，不替那个人往下活；它的寿命短是设计的一部分；它不套用前三条的模板。
+  </p>
+
+  <h2>它承诺什么，不承诺什么</h2>
+  <blockquote>
+    <p><strong>承诺：</strong>让「这句话是不是他说的」变得可查——每一句都挂着出处，查得到就信，查不到就不信。</p>
+    <p><strong>不承诺：</strong>替代一个读过原作的人；替代一个身边的人。方法可以公开，产出不可以——从真人的聊天记录里做出来的东西，属于做出它的那个人，不发布、不分享。</p>
+  </blockquote>
+
+  <h2>仓库</h2>
+  <p>
+    方法、四个案例的处理细节、四张流程图，都在 GitHub 上。
+    <strong>只给方法，不给脚本</strong>——一个能自动跑完的脚本，恰好会藏起这套方法最想教的那部分判断。
+  </p>
+
+  <div class="links">
+    <a href="https://github.com/AROPRA/SoulMRI">GitHub 仓库</a>
+    <a href="https://github.com/AROPRA/SoulMRI/blob/main/SKILL.md">SKILL.md</a>
+    <a href="https://github.com/AROPRA/SoulMRI/releases">版本</a>
+  </div>
+
+  <p class="foot">
+    MIT · 随时接受批评指正 ·
+    <a href="https://github.com/AROPRA/SoulMRI/issues">提一个问题</a>
+  </p>
+
+</div>
+</body>
+</html>
