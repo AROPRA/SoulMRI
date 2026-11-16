@@ -54,7 +54,9 @@ modeled on someone · the user has a reference
 
 **If the user cannot think of one, hand the choice back as options.** Draft three or four candidate events from whatever is already known — the tags, the reference, one line they said — and let the user keep one, cross one out, or correct one. Choosing is easier than recalling, and a crossed-out option is material too.
 
-**Only then fall back to smaller questions, and still about an event:** 「上一次有人让她难堪，她当时做了什么」 — not 「她是什么样的人」.
+**Only then fall back to smaller questions, and still about an event.** 「上一次有人让她难堪，她当时做了什么」 is an example, not a script: the question you actually ask comes from the half-written file and from what the user still has in hand. Aim at the emptiest section the user could still fill — no scene under 「我记得的事」 means ask for one more event; nothing under 「我说话的样子」 about refusing means ask for a time they said no. A fixed list of questions belongs to a questionnaire; this is a conversation with a file in the middle.
+
+**Never ask for a trait when you can ask for the last time it happened.** 「她是什么样的人」 is the one question that reliably produces nothing.
 
 **Record every 「不知道」 next to its question.** That list is the shape of the hole; a later round may find one of them, and a hole you named is honest, while a hole you forgot gets filled by the model.
 
