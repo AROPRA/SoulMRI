@@ -1,8 +1,15 @@
 # Case 2 · A publicly documented character
 
+![Case 2 flow](case2-flow.png)
+
 Read this when there is no script at hand and the character exists online — a game, an anime, a manga, a novel with a fandom.
 
 **This is the most exhausting of the four cases.** Finding evidence costs far more than writing the soul.
+
+> **Format of the delivered file — the shared template, in order. This is a hard format restriction, not a suggestion.**
+> Cases 1, 2 and 3 deliver the same ten-H2 memoir shape, defined in `SKILL.md` → Template. The order is fixed:
+> 关于这份文件 → 我是谁 → 你眼中的我 / 我想变成的我 → 谁能让我在乎 → 我记得的事 → 我说话的样子 → 我改变过的地方 → 我想要记住的人 / 事 → 我忘不掉的人 / 事 → 留白.
+> Do not reorder, rename, merge, drop, or add an H2. The ten H2s are the only sections; what goes under each, and which H3s exist, is free. Every one of the ten stays even when empty; an empty section is better than an invented one. A topic that is not one of the ten goes under the nearest H2 as content or an H3, or stays out. User-memory notes stay in the working notes.
 
 ## Before you settle for web: check for a full source
 
@@ -40,7 +47,7 @@ a quotes collection, a wiki voice-line list — is usable as the only source; la
 
 ## If the subject is a real creator, not a fictional character
 
-A real creator breaks the table above: there is no "official setting" and no "other characters". His or her own posts and videos are the body; fan art, fan fiction and audience comments stay out. The sampled body uses case 4's boundaries — public words only, no inference about private life, private use only. The advancement layer is separate (see Advancing life at the end); it is private and marked. Do not publish the soul as a character card of a real person. Expect a thinner soul than case 1; that is the material, not a failure.
+A real creator breaks the table above. Only his or her own public posts and videos are the body. The sampled body uses case 4's boundaries — public words only, no inference about private life, private use only. The advancement layer is separate (see Advancing life at the end); it is private and marked. Do not publish the soul as a character card of a real person. Expect a thinner soul than case 1; that is the material, not a failure.
 
 ### When the material is live talk: sample the recordings
 
@@ -87,7 +94,7 @@ Most people read the character's *description* section. That section is entirely
 
 **Prefer the original platform; a mirror is usable, but mark it.** If the original post is unreachable (login wall, 403), a mirror can supply the text — record the mirror URL and say it is a mirror. Mirrors lag and sometimes edit; they are a copy, not the original.
 
-### Community forums and social feeds have exactly one valid use
+### Community forums and social feeds: what they are for
 
 They are the dirtiest sources — but they do something no other source does:
 
@@ -206,7 +213,7 @@ User: "He or she acts this way in this situation"        → useful, goes to evi
 User: "I think he or she'd say something like this"      → NOT a quote. Does not enter the body.
 ```
 
-**Keep the user's memories in the working notes**, marked as the user's ("I remember him or her saying…"). They may point to a scene or a line to look for; they never become a section of the soul, and they are never mixed into the body.
+**Keep the user's memories in the working notes**, marked as the user's ("I remember him or her saying…"). They point to a scene or a line to look for; they stay in the working notes.
 
 ---
 
@@ -219,3 +226,7 @@ Online material is second-hand by nature, so the evidence is thinner and fan mat
 ## Advancing life
 
 After the sampled body is stable, events after the source or unobserved daily life may be added as `advanced`, with the contradiction check. For a real creator, the same rule applies as a **private continuation**: the sampled body keeps only his or her words; the advanced layer is marked in the working notes and never published as "where he or she is now" or "what he or she thinks today". See SKILL.md → Advancing life.
+
+---
+
+**Before delivery, check the shape.** Ten H2s, in the order above, no extra H2; content and H3 are free; every one of the ten stays even when empty. A missing heading is a hole the next reader fills; an extra heading is an invention the next model fills.

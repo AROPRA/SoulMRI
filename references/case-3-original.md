@@ -1,8 +1,15 @@
 # Case 3 · Original character, no source
 
+![Case 3 flow](case3-flow.png)
+
 Read this when there is no text, no archive, and nothing online — or when case 2 has downgraded here. A thin case-4 chat log does **not** arrive here: it borrows this case's sourcing but still produces an echo.
 
 **The method inverts.** With a source, the soul is a reconstruction. Without one, the **first draft** is a birth certificate — it records the starting point, not the whole life. After the canon is stable, the soul may grow, under the consistency rule below.
+
+> **Format of the delivered file — the shared template, in order. This is a hard format restriction, not a suggestion.**
+> Cases 1, 2 and 3 deliver the same ten-H2 memoir shape, defined in `SKILL.md` → Template. The order is fixed:
+> 关于这份文件 → 我是谁 → 你眼中的我 / 我想变成的我 → 谁能让我在乎 → 我记得的事 → 我说话的样子 → 我改变过的地方 → 我想要记住的人 / 事 → 我忘不掉的人 / 事 → 留白.
+> Do not reorder, rename, merge, drop, or add an H2. The ten H2s are the only sections; what goes under each, and which H3s exist, is free. Every one of the ten stays even when empty; an empty section is better than an invented one. A topic that is not one of the ten goes under the nearest H2 as content or an H3, or stays out. "My inferences" is a working section in the draft, not one of the ten H2s; it is removed before delivery. Sandbox-grown sentences are signed and marked, never added as a new H2.
 
 ---
 
@@ -266,3 +273,7 @@ When the soul is done, stop. Ask the user to write the 「你眼中的我」 sec
 > 这一栏留给你——你怎么看TA？
 
 Do not write it for them. It is the user's view, not the model's, and not "others". This section is used in every case.
+
+---
+
+**Before delivery, check the shape.** Ten H2s, in the order above, no extra H2; content and H3 are free; every one of the ten stays even when empty. A missing heading is a hole the next reader fills; an extra heading is an invention the next model fills.

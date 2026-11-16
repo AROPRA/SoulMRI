@@ -1,5 +1,7 @@
 # Case 4 · A real person, from chat logs — building an echo
 
+![Case 4 flow](case4-flow.png)
+
 Read this when the material is a real person's messages — WeChat, QQ, or screenshots.
 
 **Sensitive by nature. Read the boundaries first, before anything else. They are not a disclaimer.**

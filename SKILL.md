@@ -19,6 +19,7 @@ metadata:
 > 有心陪TA一起长大的，留下来；这会花点时间：写和改大约二十分钟，找材料另算（case 2 可能是一下午），中间要你划、你改、你认。不愿意的，现在就可以走——这不是五分钟能做完的事，我不骗您。
 
 **One line: don't write a character. Find what he or she already said.**
+**The whole method on one page:** [references/master-flow.png](references/master-flow.png). Each case's one-page diagram sits next to its reference.
 **用词约定：** 写中文说明时用「规则」，不用「规矩」——同一个意思，后者读起来像机器端着架子说话。
 
 > **Second — start in a fresh session, and tell the user so.**
@@ -135,6 +136,29 @@ none         I would rather not touch files at all
 **The answer changes how much you do, not what the method is.** `hands-on` gets exact steps and a time box. `click-only` gets one prepared folder and one action. `none` gets you doing the work, or the fallback — and no pipeline talk at all.
 
 **Never explain a file extension to someone who did not ask what it means.** A sentence like "extract `data.xp3` with `xp3-tool`" is unreadable to many people, and they do not say so — they quietly leave.
+
+## Examples — after the first draft, before the first review
+
+**Read the matching example only after the first draft, and before the first review round.** Reading it earlier turns it into a source: its lines, names, proportions and phrasing leak into the file, and the result looks finished while resting on the wrong evidence.
+
+| Your case | Example |
+|---|---|
+| 1 · full script / game text | `examples/kei-soul.md` |
+| 2 · public material | `examples/kei-soul.md` |
+| 3 · original character | `examples/xiaoman-soul.md` |
+| 4 · chat logs → echo | `examples/zhizimeng-echo.md` (output) + `examples/hoshino-zhizimeng-chat.md` (source) |
+
+**The example is a shape reference, not evidence.** Do not copy its lines, facts, names or phrasing into the user's file; do not fill the ten H2s with its content. It shows what a finished section reads like; the user's source supplies the content.
+
+**For case 4, read the pair.** The chat log is the source half, the echo is the output half. Read them after your own first draft, trace a few lines, and do not copy from either. The chat log is a fictional-character source; the real-person boundary still applies to real people.
+
+**One known difference in the Kei example:** its third H2 is `先生眼里的我 / 我想变成的我` instead of `你眼中的我 / 我想变成的我`. It is the same section under a different addressee. Ignore that one difference; for a user who is not "先生", use the standard heading.
+
+**The examples are earlier outputs; their headings may be Chinese-only.** Use them for shape and proportion, not for exact heading text — the Template above is authoritative.
+
+**The Xiaoman example is the earlier 小满 (the uncle's bookshop), not the later underground-idol version.** It has been rewritten to the current ten-H2 table: the old `别人眼里的我` material is now two scenes inside `我记得的事`, and the two weight sections are intentionally empty. Use it for voice and scene texture; the table is current.
+
+**Case 4's example is a fictional character** (a Blue Archive echo), included to show the echo shape. The real-person boundary still applies: a real person's echo is for the person who built it and is not published. See `examples/README.md` for the rights note.
 
 ---
 
@@ -325,20 +349,11 @@ Every line is sampled, advanced, co-built, or grown and accepted, and marked as 
 ## 留白 / The blank
 ```
 
-**The order is fixed — the second-level headings, that is.** The list above is the order the file is read in: 「你眼中的我」 always sits immediately after 「我是谁」, 「我记得的事」 before 「我说话的样子」, and the two weight sections sit side by side near the end. Do not reorder an H2 to suit the material, do not rename one, and do not drop one of these ten fixed H2s. Third-level headings are free: use as many as the scenes need, name them after the scene, and let a section have none when the material is a single thing.
+**This is a hard format restriction for cases 1–3, not a style preference: the ten H2s must appear in this order.** The list above is the order the file is read in: 「你眼中的我」 always sits immediately after 「我是谁」, 「我记得的事」 before 「我说话的样子」, and the two weight sections sit side by side near the end. Do not reorder an H2 to suit the material, do not rename one, and do not drop one of these ten fixed H2s. **What goes under each H2 is decided from the material; content and third-level headings are free** — use as many H3s as the scenes need, name them after the scene, and let a section have none when the material is a single thing.
 
-**Never add a section.** If something does not fit, it goes into the nearest existing section or it stays out. A new heading for a feeling — 「我怕的东西」 is the example that keeps appearing — invents a column the reader did not ask for and the next model will fill it.
-
-**The optional sections go between the two weight sections and 「留白」**, in this order: 我的家人, 我的身体, 我做不好的事. Any other optional section is not optional, it is an addition.
+**Never add an H2.** The ten H2s are the only sections. A topic that is not one of them is not a new H2: it goes under the nearest of the ten as content or an H3, or it stays out. A new H2 invents a column the reader did not ask for and the next model will fill it.
 
 **The two weight sections are two sections.** 我想要记住 and 我忘不掉 are never merged into one heading, and 「你眼中的我」 is never folded into an adjacent H2 — a blank column that is still visible tells the reader it is theirs.
-**Optional, only when the source supports them:**
-
-```markdown
-## 我的家人 / My family
-## 我的身体 / My body
-## 我做不好的事 / What I'm bad at
-```
 
 **There is no "how others see me" section.** What other people think of them is not the soul; it is material for finding the scenes, and it never gets a column of its own. If a description is worth keeping, it becomes a scene in 「我记得的事」, told as what happened, not as a verdict about who they are.
 
@@ -349,7 +364,7 @@ Every line is sampled, advanced, co-built, or grown and accepted, and marked as 
 **The user's words go in verbatim.** When they write the 「你眼中的我」 line, or hand you a sentence to keep, it enters the file as they wrote it. If it reads wrong in a first-person file — a pronoun, a punctuation mark, a line that should split in two — ask once and let them decide; do not quietly fix it. The one exception is a pronoun the target voice makes ungrammatical: flip only that pronoun, and show the result for review. It is the same rule as a quote: what they wrote is the record, and a silent correction makes the record yours.
 **A prohibition must read as a prohibition.** 「我说话的时候不喜欢用省略号开头」 is a description of character, and the performer will perform it; 「开口那句不用省略号，一次都不用」 is a rule, and the performer obeys. Write the hard lines the second way, and keep descriptions only for what you want performed.
 **A number you report comes from the file.** When you say how long the soul is, count it — `wc -m` on the finished file, or the editor's own count — and say what you counted (characters, or Chinese characters). A remembered number is a guess wearing a number's clothes, and the reader will check it.
-**Keep every heading, even the empty ones.** A section the source cannot support stays in the file with nothing under it — an empty section is better than an invented one, and a missing one is a hole the next reader fills. Only the optional block may be absent, and only when the material has nothing for it.
+**Keep every one of the ten headings, even the empty ones.** A section the source cannot support stays in the file with nothing under it — an empty section is better than an invented one, and a missing one is a hole the next reader fills. **Only the ten H2s are fixed; what goes under them, and which H3s exist, is free.**
 
 ### Two sections that are easy to drop, and should not be
 

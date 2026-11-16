@@ -1,8 +1,15 @@
 # Case 1 · Full script, novel, transcript, or game files
 
+![Case 1 flow](case1-flow.png)
+
 Read this when the user holds an entire text: a downloaded script, a novel, a subtitle file, or extracted game files.
 
 **A galgame (visual novel) is the best possible source.** It carries voice flags, scene labels, and stable line numbering — three things no other format gives you.
+
+> **Format of the delivered file — the shared template, in order. This is a hard format restriction, not a suggestion.**
+> Cases 1, 2 and 3 deliver the same ten-H2 memoir shape, defined in `SKILL.md` → Template. The order is fixed:
+> 关于这份文件 → 我是谁 → 你眼中的我 / 我想变成的我 → 谁能让我在乎 → 我记得的事 → 我说话的样子 → 我改变过的地方 → 我想要记住的人 / 事 → 我忘不掉的人 / 事 → 留白.
+> Do not reorder, rename, merge, drop, or add an H2. The ten H2s are the only sections; what goes under each, and which H3s exist, is free. Every one of the ten stays even when empty; an empty section is better than an invented one. A topic that is not one of the ten goes under the nearest H2 as content or an H3, or stays out. There is no "how others see me" H2. The intermediate table and the UNSURE list are working notes, not part of this shape.
 
 ## Three paths — choose by material, not by preference
 
@@ -321,7 +328,7 @@ Do not try to filter this out mechanically. Three options, and the third is the 
 
 ```
 he or she said  → the piles about speech, catchphrases, how I talk
-written about    → scenes in 「我记得的事」, and 「我的身体」 when it is about the body
+written about    → scenes in 「我记得的事」; physical details under 「我是谁」 or an H3 there
 ```
 
 **Do not merge them.** Narration describing him or her is not him or her. Mixing the two deforms his or her tone faster than any other mistake in this case.
@@ -362,3 +369,7 @@ Once the sampled body is stable, the soul may include events after the source or
 ## Exit condition
 
 **If you cannot build the intermediate table at all** — no speaker tags, no scene breaks, no way to attribute a line — then you are not in case 1. Say so plainly, and drop **one step only**: to case 2 if the work is known, with the user's agreement. If case 2 also fails (fewer than three real lines, everything description), only then does the 2 → 3 step apply, again with agreement. If the work is not known at all you were never in case 1 — that is case 3 from the start. **Never jump 1 → 3.**
+
+---
+
+**Before delivery, check the shape.** Ten H2s, in the order above, no extra H2; content and H3 are free; every one of the ten stays even when empty. A missing heading is a hole the next reader fills; an extra heading is an invention the next model fills.
