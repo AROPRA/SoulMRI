@@ -3,7 +3,7 @@ name: soulmri
 description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.24.0"
+  version: "1.25.0"
 ---
 
 # SoulMRI
@@ -464,8 +464,9 @@ round 3       no floor
 **Case 3 — the first draft is 600–1,200; every round adds a wave, and the wave has a size.**
 
 ```
-complete idea   draft 600–1,200   round +800 ~ +1,500   → 2,500–4,500 over two rounds
-tags only       draft 600–1,200   round +400 ~ +700     → 2,000–3,000 over two to four rounds
+complete idea    draft 600–1,200   round +800 ~ +1,500   → 2,500–4,500 over two rounds
+tags only         draft 600–1,200   round +400 ~ +700     → 2,000–3,000 over two to four rounds
+modeled on someone  draft 600–1,200   round +800 ~ +1,500   → 2,500–4,500 over two rounds
 fourth round and later: no floor
 ```
 
