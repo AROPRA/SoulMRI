@@ -31,30 +31,17 @@ modeled on someone · the user has a reference
 
 **In the tags-only branch, a tag is a seed, not a trait.** 「无口、安静」 does not become "he or she is quiet"; it becomes: one or two words to people, a nod instead of an answer, full sentences only to the cat, one rare full sentence when it matters. Convert every tag into rules and scenes before writing.
 
-**A worked set — 猫 / 夜班 / 怕吵:**
+**A reference is a starting point, not a dossier.** When the user says 「像某某」, do not study that person exhaustively. Ask first which layer of them they mean — how they talk, how they carry themselves, how they treat people, or how their life went — then do a **light** search: ten minutes, a few pages, enough to see the shape.
 
-```
-猫        keeps one, picked up in the rain; talks to it in full sentences,
-          says nothing to people; the cat does not come to the door
-夜班      convenience store, 22:00–06:00; the shop is empty at two in the
-          morning; the window is shut and the door locked before sleeping
-怕吵      not volume, but anything she did not decide: a knock at the door,
-          the upstairs neighbour moving furniture
-```
+**Turn what you learn into five to ten tags and hand them over.** The user crosses out what is wrong, keeps what fits, adds what is missing. What survives goes into the tags-only branch, and the same rules apply: every tag becomes a speech rule or a scene, never an adjective.
 
-Each tag ends as a scene or a rule; none of them ends as 「她很安静」.
-
-**A reference is a ruler, not material.** 「像某某」 is the most common way into this case and the easiest to get wrong: that character's lines belong to that character, and copying them builds a counterfeit. Take the *rules* — how long the sentences run, what he or she answers with, what he or she never says, how a stranger is treated — and let the new person wear them. Ask which layer the user means: **how they talk, how they carry themselves, how they treat people, or how their life went.** The four give very different souls, and most users mean the first or the third.
-
-**If the reference is a character the user loves, say the obvious thing once:** that character can be built properly from its own source under case 1 or 2. Offer it, then build the new one. Do not quietly turn this file into a copy of the reference — the user came here for someone new, and a copy will read as that other person wearing a different name.
-
----
+**If the reference has its own source, say once that it can be built properly under case 1 or 2** — then build the new one, because that is what the user asked for.
 
 ## When the user cannot answer
 
 「不知道」 is a valid answer, but a run of them ends the session. Three moves, in order:
 
-1. **Change the question, not the subject.** 「她是什么样的人」 gets a shrug; 「她昨天出门先迈哪只脚」 gets a sentence. Ask for a moment, not a trait.
+1. **Change the question, not the subject.** 「她是什么样的人」 gets a shrug; 「上一次有人让她难堪，她当时说了什么」 gets a sentence. Ask about the last time something happened, not about a trait.
 2. **Offer two candidates.** 「她是那种把气咽下去的人，还是当场就顶回去的人？」 A wrong option is easier to reject than a blank is to fill, and the rejection is material too.
 3. **Fall back to the last time it happened.** 「上一次有人这么干，她做了什么？」 Scenes come back when traits do not.
 
