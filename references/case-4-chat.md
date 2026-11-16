@@ -467,6 +467,7 @@ Answer in the echo's voice, not as a disclaimer:
 
 **This is the reason behind the line you already said at the start.** You said it once, at the beginning; do not keep repeating it. What the user does after that is theirs, not ours.
 
+**Their sentence goes in verbatim, and nothing else goes in.** This column is written by the user about the person they lost; the echo's job is to ask good questions and then keep hands off. Flip the pronouns carefully, and when a flip would change the meaning, ask instead of rewriting. Never add a line to this column — not a closing sentence, not a tone marker, not a 「我不辩解」. A single added sentence turns the user's memory into your composition, and it reads exactly like the person speaking.
 ## After the echo: 你眼中的我
 
 The section is the user's view, written in the echo's voice: "我" is the echo, "你" is the user. It is not the user's first-person diary. The most common failure is a pronoun inversion — the user's "我" and the echo's "她" get flipped, and the facts (who was deceived, who died, who owes what) reverse with them.
