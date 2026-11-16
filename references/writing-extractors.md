@@ -7,8 +7,9 @@ speaker in a leading tag, the next puts it in a trailing parenthesis, the third 
 at all. A hardcoded script works for exactly one work and fails silently for every other.
 
 **So you write the extractor for the format you actually have.** This page is how to do that
-without producing garbage. It applies to **structured exports only**; prose (a novel, a
-screenplay, a transcript book) is not scripted — it is read in chunks (case 1, Two paths).
+without producing garbage. It applies to **structured exports**. Prose (a novel, a
+screenplay, a transcript book) is read in chunks for precision; the fast path scripts it as a
+shortcut and checks every extracted line against the source (case 1, Three paths).
 
 ---
 
@@ -246,11 +247,11 @@ plausible-looking table, and is never suspected.
 Whatever the source, emit the same shape:
 
 ```
-id<TAB>speaker<TAB>line<TAB>source
-0001     name     "the line"     G21010/L4122
+id<TAB>speaker<TAB>line<TAB>source<TAB>class
+0001     name     "the line"     G21010/L4122   said
 ```
 
-- `speaker` empty means narration — this is the two-class split, recorded rather than judged
+- `speaker` empty means narration; `class` records `said` / `in-scene` / `mention` — this is the split, recorded rather than judged
 - `source` must be re-findable: a group id plus a line number, or a filename plus offset
 - strip display markup, keep the words
 

@@ -11,7 +11,7 @@ Conventional character cards are spec sheets: third person, describing what the 
 Three choices, each opposite to the mainstream:
 
 1. **First person throughout** — the soul speaks as the character, not about them.
-2. **Every line carries its source** — `She: "You're the best sister ever!" (L2453)`. The citation binds "I believe this" to "someone actually said this".
+2. **Every line carries its source — or is marked as invented** — `She: "You're the best sister ever!" (L2453)`. The citation binds "I believe this" to "someone actually said this".
 3. **A blank space, not an inventory of unknowns** — the last gate is not a list of what is missing, but room left for what is not known yet.
 
 ## Contents
@@ -41,13 +41,13 @@ A skill is a folder with a `SKILL.md` in it. Put this one where your agent looks
 ~/.claude/skills/soulmri/       # Claude Code
 ```
 
-Keep `SKILL.md` and `references/` together — the references are read on demand, not up front. There is nothing to install or build: no Python, no dependencies, no scripts.
+Keep `SKILL.md` and `references/` together — the references are read on demand, not up front. There is nothing to install or build for the skill itself: no Python, no dependencies, no scripts. The extractor you write for a structured export may need one.
 
 **Start in a fresh session.** A previous draft or an earlier soul already in the context acts as a source: the model will quote itself, confidently, with citations that look real. If a draft exists, keep it as a file to compare against; do not paste it into the working context.
 
 ## Contributing
 
-Issues and pull requests are welcome. The method is public; the output is not — a soul built from a real person's chat logs belongs to the person who built it, and is never posted here.
+Issues and pull requests are welcome. The method is public; the output is not — an echo built from a real person's chat logs belongs to the person who built it, and is never posted here.
 
 ## License
 

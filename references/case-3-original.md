@@ -67,7 +67,7 @@ modeled on someone · the user has a reference
 Case 3 has no source, so the user's answers are the canon.
 
 ```
-first draft   only what the user said; inferences go in a separate section
+first draft   only what the user said; inferences go in a separate working section
 canon         the confirmed core: name, speech rules, 3–5 scenes, key relationships
 expansion     the model may invent facts (scenes, daily life, relationships)
               that do not contradict the canon
@@ -87,7 +87,7 @@ values        what he or she would/would not do
 
 A new fact that conflicts is rejected or returned to the user. A new fact that passes is added; the user reviews each round.
 
-**The blank becomes "not decided yet", not "never".** What the user does not want to decide stays empty; what the model invents is recorded in the working notes, not in his or her memoir.
+**The blank becomes "not decided yet", not "never".** What the user does not want to decide stays empty; an invention the user has not accepted stays in the working notes, not in his or her memoir. Once accepted, it enters the soul as an accepted line.
 
 ---
 
@@ -148,7 +148,7 @@ This is where the case most easily turns into "the model invents a setting." The
                                  cares. That is my inference — correct?"
 ```
 
-**During the first draft, model output goes into its own section — "My inferences" — with a question mark on every entry.**
+**During the first draft, model output goes into its own working section — "My inferences" — with a question mark on every entry. It lives in the draft, not in the delivered soul; it is removed when the canon is settled.**
 
 ```
 confirmed      → move into the body
@@ -224,12 +224,13 @@ Expansion        → the model may propose a fact, but only with the user's appr
 The first draft is 600–1,200 characters. Each round adds a wave, and the wave has a size:
 
 ```
-complete idea   +800 ~ +1,500 per round   → 2,500–4,500 by round two
-tags only       +400 ~ +700 per round     → 2,000–3,000 by rounds two to four
+complete idea   +800 ~ +1,500 per round   target 2,500–4,500
+tags only       +400 ~ +700 per round     target 2,000–3,000
 fourth round    no floor
 ```
 
-**Every round must move the file closer to the person in the user's head.** If a round adds nothing but commas, it did not happen. If the canon runs out before the floor, stop and say so — the floor never licenses invention.
+**The target is the range the finished file should land in; the wave is the minimum movement per round, not an exact sum.** Every round must move the file closer to the person in the user's head. If a round adds nothing but commas, it did not happen. If the canon runs out before the next wave, stop and say so — the wave never licenses invention.
+
 ## Length: the canon decides, not the target
 
 The first draft is usually 600–1,200 characters. The expansion adds scenes, lines, and daily life until the user's material is used up.
@@ -239,7 +240,7 @@ A · complete idea      2,500–4,500
 B · tags only          2,000–3,000
 ```
 
-**If the target is reached but the canon is thin, cut.** The length is a ceiling, not a quota; a 2,000-character soul with nothing to check against is a short story, not a soul.
+**If the target is reached but the canon is thin, cut.** The target is a range: a floor for effort, a ceiling for padding. If the canon is thin, stop at the low end and say so; a 2,000-character soul with nothing to check against is a short story, not a soul.
 
 ---
 
@@ -264,4 +265,4 @@ When the soul is done, stop. Ask the user to write the 「你眼中的我」 sec
 
 > 这一栏留给你——你怎么看TA？
 
-Do not write it for them. It is the user's view, not the model's, and not "others". This section is used in cases 3 and 4 only.
+Do not write it for them. It is the user's view, not the model's, and not "others". This section is used in every case.

@@ -1,9 +1,9 @@
 ---
 name: soulmri
-description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
+description: "Build a character soul file that makes a model RECOGNIZE a character instead of ACTING one. Use when someone wants to make a character card / persona / soul file / 「人格卡」, or when an existing card feels like the model is role-playing rather than being someone. Four evidence situations are handled: (1) a full script or transcript, (2) a publicly documented character, (3) an original character with no source, (4) a real person's chat logs — which build an echo, not a memoir. Core method: replace CREATION with EXTRACTION — first person throughout, every line carrying its source or its mark, and a blank space left unwritten at the end. Does not fill in Character Card JSON fields."
 license: MIT
 metadata:
-  version: "1.25.0"
+  version: "1.34.0"
 ---
 
 # SoulMRI
@@ -16,12 +16,12 @@ metadata:
 >
 > （case 4 不同：那里写出来的不是新的生命，是一份回响。它不长大，也不替谁活着。）
 >
-> 有心陪TA一起长大的，留下来；这会花点时间，大约二十分钟，中间要你划、你改、你认。不愿意的，现在就可以走——这不是五分钟能做完的事，我不骗您。
+> 有心陪TA一起长大的，留下来；这会花点时间：写和改大约二十分钟，找材料另算（case 2 可能是一下午），中间要你划、你改、你认。不愿意的，现在就可以走——这不是五分钟能做完的事，我不骗您。
 
 **One line: don't write a character. Find what he or she already said.**
 **用词约定：** 写中文说明时用「规则」，不用「规矩」——同一个意思，后者读起来像机器端着架子说话。
 
-> **Start in a fresh session — and tell the user so before anything else.**
+> **Second — start in a fresh session, and tell the user so.**
 > An old draft, a previous soul, or a long conversation about this character sits in the context and starts acting as a source. The model then quotes its own earlier text — confidently, and with citations that look real — and every later check confirms the same error. If a draft exists, keep it as a file to diff against; do not paste it into the working context.
 
 Conventional character cards are **spec sheets** — third person, describing what he or she is like. The model receives it and has to *act* him or her.
@@ -39,12 +39,12 @@ Three choices, each opposite to the mainstream:
 **① First person throughout.**
 Character Card V2's own guidance says *"Don't write this as ... first person."* We do the opposite on purpose: second person is an **instruction** (to be executed), first person is an **identity** (to be inhabited).
 
-**② Every line carries its source.**
+**② Every line carries its source — or is marked as invented.**
 `He or she: "You're the best sister ever!" (L2453)`
-The citation is not decoration. It binds "I believe this" to "someone actually said this," so every line can be checked — and the model has no room to invent.
+The citation is not decoration. It binds "I believe this" to "someone actually said this," so every line can be checked — and the model has no room to invent silently.
 
 **③ A blank space, not an inventory of unknowns.**
-Mainstream cards demand completeness, and completeness means invention. The last gate is not a list of what is unknown — a named unknown becomes a setting, and the model will act it out. So the section stays blank: one line saying it is left empty, because what is written down stops growing. What you did not find, you do not write.
+Mainstream cards demand completeness, and completeness means invention. The last gate is not a list of what is unknown — a named unknown becomes a setting, and the model will act it out. So the section stays blank: one line saying it is left empty, because what is written down stops growing. What you did not find, you do not write in the sampled body.
 
 **Net effect:** card writing stops being *creation* (talent, inspiration, unreproducible) and becomes *extraction* (reading, citing, anyone can do it).
 
@@ -54,12 +54,12 @@ Mainstream cards demand completeness, and completeness means invention. The last
 
 This method does not make a model careful. It makes a user **able to check**. Precision comes from four things, in this order:
 
-1. **The source is read, not sampled.** Sampling gives you the character's greatest hits and loses the ordinary lines — and the ordinary lines are where the voice lives.
-2. **Scripts only where the format is structured.** A game export with speaker tags and scene IDs is exactly what a script is for: write one for that format. Prose — a novel, a screenplay, a transcript book — is not: a script has to guess the structure from formatting, and it fails *silently* (wrong speaker, dropped narration, merged scenes). Prose is read.
+1. **The source is read, not sampled.** Sampling gives you the character's greatest hits and loses the ordinary lines — and the ordinary lines are where the voice lives. Live talk is the exception: a recording is sampled across the timeline, because there is no complete text to read (case 2).
+2. **Scripts are the default only where the format is structured.** A game export with speaker tags and scene IDs is exactly what a script is for: write one for that format. Prose — a novel, a screenplay, a transcript book — is read for precision: a script has to guess the structure from formatting, and it fails *silently* (wrong speaker, dropped narration, merged scenes). A fast path may script prose, but it is a lossy shortcut: every extracted line is then checked against the source.
 3. **Every line is checked at the line level.** A scene ID is not a citation. The check is: does this line exist, and does this speaker say it?
 4. **A human reviews.** The model can check existence; it cannot hear that a line "sounds like a summary". Keep a reviewer who knows the character.
 
-**A skill can teach all four. It cannot supply the source, the reviewer, or the hours.** Say this to the user before starting — it is the difference between a promise and a method.
+**A skill can teach all four. It cannot supply the source, the reviewer, or the hours of finding and checking.** Say this to the user before starting — it is the difference between a promise and a method.
 
 ---
 
@@ -72,16 +72,16 @@ This method does not make a model careful. It makes a user **able to check**. Pr
 - It does not replace a reader who knows the character. The model can check whether a line exists; it cannot hear that a line sounds like a summary.
 - It does not persist. A skill is re-read every session; the model does not learn it once and keep it.
 - **It ships no scripts.** Not an extractor, not a diagram generator, not a test harness. A script works for one file and fails silently for the rest; the method says what the script must do and leaves writing it to the work at hand.
-- **It does not unpack a protected archive.** Opening the copy the user holds gets one attempt: one tool, one pass, about ten minutes, then it stops. Not a second tool, not the next layer, never a derived key. Finding text somewhere else is a different move and has no such limit — see case 1.
+- **It does not unpack a protected archive.** Opening the copy the user holds gets one attempt: one toolchain, one pass, about ten minutes, then it stops. Not a second toolchain, not the next layer, never a derived key. Finding text somewhere else is a different move and has no such limit — see case 1.
 - **It does not fetch the game.** No download, no install, no launch, no SteamCMD, no store-page client, no mirror, and no unpacking of a copy the user does not hold. The text is *found*, not acquired — a transcript, a script, subtitles, the novel: something already written down. If none of it exists, that is the answer.
-- **It does not read scans or OCR pages.** A page can be turned into text, but not into who said it: the speaker lives in the drawing. Scanned dialogue comes out as an unattributed stream, and every line then gets attributed by guess.
+- **It does not read scanned dialogue pages, and does not OCR them.** A page can be turned into text, but not into who said it: the speaker lives in the drawing. Scanned dialogue comes out as an unattributed stream, and every line then gets attributed by guess.
 - **It does not replace a person for another person.** Cases 3 and 4 can both produce something it is easy to lean on. If that is happening, say it plainly, once. This line is not a disclaimer; it is the one thing most likely to be skipped.
 
 ---
 
-## Trigger the four nodes first
+## Trigger the four cases first
 
-Before anything else, ask one question — where does the material come from?
+Then ask one question — where does the material come from?
 
 ```
 1  A full script, novel, subtitle file, or game text
@@ -118,7 +118,7 @@ different people, one name  a remake, a crossover, a parallel-world version     
 
 **An adaptation is not a version.** If the anime says nearly the same lines as the game, separating them only adds ceremony and loses lines: write one soul, and record which medium each quote came from. *ATRI*'s anime and game are one person; a remake that rewrote her is not.
 
-**A long span is a version.** A child and an adult with one name are not one person: their views, their relationships and their way of speaking have moved (Dragon Ball's Son Goku, Clannad's Tomoya). When the span is long and the user has not named a period, **propose a combined soul**: one file, sections by period ("when I was small", "after she was gone"), every line cited to its period — never one blended sentence. Say what you are doing before you do it.
+**A long span is a version.** A child and an adult with one name are not one person: their views, their relationships and their way of speaking have moved (Dragon Ball's Son Goku, Clannad's Tomoya). When the span is long and the user has not named a period, **propose a combined soul**: one file, period subsections inside 「我记得的事」 ("when I was small", "after she was gone"), every line cited to its period — never one blended sentence. Say what you are doing before you do it.
 
 **Most long works are not like that.** A million words of *Re:Zero* or a light novel of *Makeine* still describe one character whose core does not move much; length alone is not a version.
 
@@ -140,7 +140,7 @@ none         I would rather not touch files at all
 
 ## Then narrow down inside the chosen case
 
-Once the node is chosen, one more question narrows it:
+Once the case is chosen, one more question narrows it:
 
 ```
 IF 1 · What kind of material is it?
@@ -157,7 +157,7 @@ IF 1 · Does the text contain narration about them, or only their lines?
 
 IF 2 · Did you find words they actually said, or descriptions about them?
            actual lines → usable in the body
-           descriptions → context only; they help you find scenes, and never enter the body
+           descriptions → context only; they help you find scenes and identity facts, but the description itself never enters the body as a quote
 
 IF 4 · How many messages, and is it text export or screenshots?
            under ~100 → too thin to rebuild the voice from logs alone;
@@ -179,7 +179,7 @@ Hard evidence  →  more may be stated
 Soft evidence  →  less may be stated
 ```
 
-**Filling the gaps is what produces acting voice.** There is no quota and no percentage to hit: the softer the evidence, the less may be stated. Whatever the source does not support stays unwritten, and the blank at the end is the same in every case — one line saying it is empty.
+**Filling the gaps is what produces acting voice.** There is no evidence quota and no percentage to hit: the softer the evidence, the less may be stated. Whatever the source does not support stays unwritten. The blank opens with one line in every case — "this is empty" in cases 1, 2 and 4, and "not decided yet" in case 3; in case 3, entries the user approves may follow.
 
 **Enthusiasm is not evidence.** A user saying "take everything", "don't leave anything out" or "I want it thick" is a wish about completeness, not new proof. A line whose speaker you cannot establish stays out of the body no matter how much they want it in; say why in one sentence, keep the line in the working notes, and let the soul be thinner. The user can waive the ceremony, not the doubt.
 
@@ -195,7 +195,7 @@ Read the matching reference before proceeding:
 
 ---
 
-## The extraction steps — shared by all cases
+## The extraction steps — shared by cases 1–3
 
 ### 0 · Choose the reading path (case 1 only)
 
@@ -245,7 +245,7 @@ The blank             left empty on purpose — no entries
 
 1. **First person.** "I am Shi Meng." "I don't smile much." "I scold him or her because he or she is too trusting."
    Not "he or she is cold" — write "people say I'm cold; I don't deny it."
-2. **Every line carries its source.** Quotes carry `(L2453)`. No source — omit it.
+2. **Every sampled line carries its source.** Quotes carry `(L2453)`. A line with no source is omitted; an invented line is marked as advanced or co-built, never dressed as a quote.
 3. **Quote beats description.** Instead of "he or she is harsh with his or her sister," put the actual line where he or she scolds his or her sister.
 
 **Open with a note that is not an order but an exit:**
@@ -285,13 +285,13 @@ advanced    an event after the source, or unobserved daily life    → cases 1, 
 co-built    a fact invented with the user for an original character → case 3
 ```
 
-**Case 4 is deliberately absent from the `advanced` row.** An echo answers; it does not grow. It has no "where they are now", no events past the last log, no opinions about the future. This is not caution about invention — it is the difference between a memoir (which may continue a life) and an echo (which only answers). See `references/case-4-chat.md`.
+**Case 4 is deliberately absent from the `advanced` row.** An echo answers; it does not grow. It has no life updates, no events past the last log, no opinions about the future. This is not caution about invention — it is the difference between a memoir (which may continue a life) and an echo (which only answers). See `references/case-4-chat.md`.
 
 **The rule is contradiction, not purity.** A new fact may be invented; it may not change an established one — identity, relationship, timeline, place, ability, speech, values.
 
 **Canon first.** Build the sampled/co-built core before expanding. If you invent before the canon is stable, the invention becomes the canon, and there is nothing left to check against.
 
-**The blank stays for the past.** For cases 1, 2, 4, do not fill a gap in the sampled past with invention. The future is not a gap: it can be advanced, marked, and checked. For case 3, the blank is "not decided yet" — the expansion may fill it with the user's approval.
+**The blank stays for the past.** For cases 1, 2, 4, do not fill a gap in the sampled past with invention. For cases 1 and 2 the future is not a gap: it can be advanced, marked, and checked; case 4's future stays outside the echo (see below). For case 3, the blank is "not decided yet" — the expansion may fill it with the user's approval.
 
 **For a real creator in case 2, advancement is allowed — as a private continuation, not a claim.** The sampled body still contains only their words. The advanced layer is marked in the working notes, kept private, and never published as "where they are now" or "what they think today". The user knows which parts are sampled and which are advanced; the soul does not pretend the advanced parts are evidence.
 
@@ -309,7 +309,7 @@ co-built    a fact invented with the user for an original character → case 3
 ## 关于这份文件 / About this file
 This is not a command. …
 If what you write differs from this, ask why first. Nothing here was invented by someone else — or, where a sentence was grown and accepted, it is marked as accepted.
-Every line is either sampled or marked as advanced; citations follow each sentence.
+Every line is sampled, advanced, co-built, or grown and accepted, and marked as such; citations follow each sampled line in the body.
 
 ## 我是谁 / Who I am
 ## 你眼中的我 / 我想变成的我 · How you see me / who I want to become
@@ -325,13 +325,13 @@ Every line is either sampled or marked as advanced; citations follow each senten
 ## 留白 / The blank
 ```
 
-**The order is fixed — the second-level headings, that is.** The list above is the order the file is read in: 「你眼中的我」 always sits immediately after 「我是谁」, 「我记得的事」 before 「我说话的样子」, and the two weight sections sit side by side near the end. Do not reorder an H2 to suit the material, do not rename one, and do not drop one. Third-level headings are free: use as many as the scenes need, name them after the scene, and let a section have none when the material is a single thing.
+**The order is fixed — the second-level headings, that is.** The list above is the order the file is read in: 「你眼中的我」 always sits immediately after 「我是谁」, 「我记得的事」 before 「我说话的样子」, and the two weight sections sit side by side near the end. Do not reorder an H2 to suit the material, do not rename one, and do not drop one of these ten fixed H2s. Third-level headings are free: use as many as the scenes need, name them after the scene, and let a section have none when the material is a single thing.
 
 **Never add a section.** If something does not fit, it goes into the nearest existing section or it stays out. A new heading for a feeling — 「我怕的东西」 is the example that keeps appearing — invents a column the reader did not ask for and the next model will fill it.
 
 **The optional sections go between the two weight sections and 「留白」**, in this order: 我的家人, 我的身体, 我做不好的事. Any other optional section is not optional, it is an addition.
 
-**The two weight sections are two sections.** 我想要记住 and 我忘不掉 are never merged into one heading, and 「你眼中的我」 is never folded into the closing paragraph — a blank column that is still visible tells the reader it is theirs.
+**The two weight sections are two sections.** 我想要记住 and 我忘不掉 are never merged into one heading, and 「你眼中的我」 is never folded into an adjacent H2 — a blank column that is still visible tells the reader it is theirs.
 **Optional, only when the source supports them:**
 
 ```markdown
@@ -342,11 +342,11 @@ Every line is either sampled or marked as advanced; citations follow each senten
 
 **There is no "how others see me" section.** What other people think of them is not the soul; it is material for finding the scenes, and it never gets a column of its own. If a description is worth keeping, it becomes a scene in 「我记得的事」, told as what happened, not as a verdict about who they are.
 
-**「你眼中的我」 is the user's view, and it is theirs to write.** It sits next to 「我想变成的我」 because the two are read together: how the person who built the file sees them, and who they want to become. When the soul is done, stop and ask: 「这一栏留给你——你怎么看TA？」 Do not fill it, in any case.
+**「你眼中的我」 is the user's view, and it is theirs to write.** It shares one heading with 「我想变成的我」 because the two are read together: how the person who built the file sees them, and who they want to become. When the soul is done, stop and ask: 「这一栏留给你——你怎么看TA？」 Do not fill it, in any case.
 
-**The template uses both languages on purpose.** The Chinese name is what the file says; the English name is for reading the method. Keep both lines in the file — a reader who knows only one of the two should still be able to find their way.
+**The template uses both languages on purpose.** The Chinese name is what the file says; the English name is for reading the method. Keep both names in every heading — a reader who knows only one of the two should still be able to find their way.
 
-**The user''s words go in verbatim.** When they write the 「你眼中的我」 line, or hand you a sentence to keep, it enters the file as they wrote it. If it reads wrong in a first-person file — a pronoun, a punctuation mark, a line that should split in two — ask once and let them decide; do not quietly fix it. It is the same rule as a quote: what they wrote is the record, and a silent correction makes the record yours.
+**The user's words go in verbatim.** When they write the 「你眼中的我」 line, or hand you a sentence to keep, it enters the file as they wrote it. If it reads wrong in a first-person file — a pronoun, a punctuation mark, a line that should split in two — ask once and let them decide; do not quietly fix it. The one exception is a pronoun the target voice makes ungrammatical: flip only that pronoun, and show the result for review. It is the same rule as a quote: what they wrote is the record, and a silent correction makes the record yours.
 **A prohibition must read as a prohibition.** 「我说话的时候不喜欢用省略号开头」 is a description of character, and the performer will perform it; 「开口那句不用省略号，一次都不用」 is a rule, and the performer obeys. Write the hard lines the second way, and keep descriptions only for what you want performed.
 **A number you report comes from the file.** When you say how long the soul is, count it — `wc -m` on the finished file, or the editor's own count — and say what you counted (characters, or Chinese characters). A remembered number is a guess wearing a number's clothes, and the reader will check it.
 **Keep every heading, even the empty ones.** A section the source cannot support stays in the file with nothing under it — an empty section is better than an invented one, and a missing one is a hole the next reader fills. Only the optional block may be absent, and only when the material has nothing for it.
@@ -373,7 +373,7 @@ not written           ellipsis_rate: 0.90
 
 **A frequency turns an identity into a quota.**
 
-**So: count to understand, quote to write. Numbers belong in your working notes, never in his or her memoir.**
+**So: count to understand, quote to write. Numbers belong in your working notes, never in his or her memoir.** This applies to case 4 too: an echo's language profile is a working page, not a table in the file.
 
 ---
 
@@ -415,11 +415,11 @@ Cases are not sealed. Downgrading is allowed, but **the user must agree to it** 
 
 > There are not enough messages here to rebuild the voice from logs alone. We can still build an echo: the logs give the sound, and your memory fills the rest — with each line marked as yours, not theirs. Continue?
 
-**Material already gathered is never thrown away.** Second-hand descriptions move into "how others see me," clearly marked as second-hand.
+**Material already gathered is never thrown away.** Second-hand descriptions stay in the working notes, clearly marked as second-hand; they may point to a scene, but they never become a section of the soul.
 
 **Changing the source is not the same as changing the case.** When the copy the user owns cannot be opened (see case 1 → "If the user has game files and no script"), or when they have nothing at hand and the text is found elsewhere, the switch is announced in one sentence, shown to the user once, and recorded in the citations. It needs no approval, because the product's nature does not change. What must never enter is the retelling — commentary, wiki summaries, analysis, fan fiction; a transcript that merely passed through someone else's hands is still their lines.
 
-**The one exception is a version that changes who they are.** Game, anime and novel are usually one person in another medium: merge them, and label which medium each line came from. But a remake that rewrote the character, a parallel-world version, or a span long enough that they grew into someone else is a different person — show the difference and let the user choose. If they have not chosen a period, propose one file with sections by period rather than two files or one blend.
+**The one exception is a version that changes who they are.** Game, anime and novel are usually one person in another medium: merge them, and label which medium each line came from. But a remake that rewrote the character, a parallel-world version, or a span long enough that they grew into someone else is a different person — show the difference and let the user choose. If they have not chosen a period, propose one file with period subsections rather than two files or one blend.
 
 ---
 
@@ -467,11 +467,13 @@ round 3       no floor
 **Case 3 — the first draft is 600–1,200; every round adds a wave, and the wave has a size.**
 
 ```
-complete idea    draft 600–1,200   round +800 ~ +1,500   → 2,500–4,500 over two rounds
-tags only         draft 600–1,200   round +400 ~ +700     → 2,000–3,000 over two to four rounds
-modeled on someone  draft 600–1,200   round +800 ~ +1,500   → 2,500–4,500 over two rounds
+complete idea    draft 600–1,200   wave +800 ~ +1,500   target 2,500–4,500
+tags only         draft 600–1,200   wave +400 ~ +700     target 2,000–3,000
+modeled on someone  draft 600–1,200   wave +800 ~ +1,500   target 2,500–4,500
 fourth round and later: no floor
 ```
+
+**The target is the range the finished file should land in; the wave is the minimum movement per round, not an exact sum.**
 
 **Case 4 has no length target at all** — an echo ends where the situations the material supports end.
 
@@ -483,7 +485,7 @@ fourth round and later: no floor
 
 **When the user says they are satisfied:**
 
-1. stop the loop;
+1. stop the drafting loop;
 2. export the soul to a file;
 3. start the sandbox test;
 4. tell the user: 「现在进沙箱：我挂上这份文件，问五六个问题，再让它自己出题。这一步查的是TA知不知道自己的故事，不是听起来像不像。」
@@ -503,7 +505,7 @@ If the user objects:
 3. re-run the affected questions (or the whole sandbox);
 4. ask again.
 
-Only the user's acceptance of the sandbox result closes the loop.
+Only the user's acceptance of the sandbox result closes the review loop.
 
 ---
 
@@ -519,7 +521,7 @@ Only the user's acceptance of the sandbox result closes the loop.
 
 Take the rejected answers, five to fifteen of them, and put the model's version of each with a blank under it. The user writes one sentence per item: "this is how it should have been said." Not a paragraph, not a scene rewrite — one line per row.
 
-> 下面是刚才沙箱里的十几条回答。您觉得不像的，在每句下面写一句：如果让您来写，这句会怎么说？不用整段，一句就行。
+> 下面是刚才沙箱里的几条回答。您觉得不像的，在每句下面写一句：如果让您来写，这句会怎么说？不用整段，一句就行。
 
 **Why a batch.** One line per turn means five round-trips for five sentences, and the user has to reload the context each time. Five to fifteen lines is one sitting and costs the user ten or fifteen minutes — that is the real price of this step, and it is worth paying once instead of five times. If the user only wants to correct two, take two; but do not ask for one.
 
@@ -550,7 +552,7 @@ Three self-checks, each answerable by pointing at the source:
 2. **Any "you are" or "he or she is" left in the text?**
    Change to "I am" / "I don't."
 3. **Is the blank still blank?**
-   If it has entries, they were written from something other than the source. Delete them and restore the blank.
+   For cases 1, 2 and 4, if it has entries, they were written from something other than the source. Delete them and restore the blank. In case 3 the blank says "not decided yet"; an entry may stay only if the user approved it.
 
 ### The sandbox test
 
@@ -595,16 +597,16 @@ Rewrite each turn three to five ways against both, keep the ones that stay in vo
 Non-negotiable, especially for case 4.
 
 ```
-Only his or her words — not yours, not what you assume he or she meant
-Never infer his or her life from a fragment ("he or she mentioned his or her mother" ≠ "they were close")
-Never write where he or she is now, or what he or she would think today
-For someone who has passed: never write "if he or she were still here"
+Only his or her words in the reconstructed body — not yours, not what you assume he or she meant; user memory stays in the supplied block, labelled
+Never present an inference as fact; infer only into the working notes, ask, and keep it out of the body until the user confirms
+In the sampled body, never write their current life, events after the last log, or what they would think today; cases 1–2 may advance a life only as the marked layer described above
+In case 4, when the person has passed: never write "if he or she were still here" into the echo
 ```
 
 **And the one that matters for publishing this skill:**
 
 > **The method may be public. The output may not.**
-> A soul built from a real person's chat logs is for the person who built it. It does not get published anywhere.
+> An echo built from a real person's chat logs is for the person who built it. It does not get published anywhere.
 > This repository open-sources a *method*, not a *person*.
 
 **Material legality is the user's responsibility.** This skill works only with text the user lawfully holds. It does not provide, and does not teach how to obtain, any game, script or chat export.

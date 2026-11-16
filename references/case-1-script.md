@@ -4,7 +4,7 @@ Read this when the user holds an entire text: a downloaded script, a novel, a su
 
 **A galgame (visual novel) is the best possible source.** It carries voice flags, scene labels, and stable line numbering — three things no other format gives you.
 
-## Two paths — choose by material, not by preference
+## Three paths — choose by material, not by preference
 
 ```
 structured game export   → script → verify every line
@@ -13,7 +13,7 @@ prose (novel / screenplay / transcript book), high precision
 prose, fast              → script → review every line against the source
 ```
 
-**A script on prose fails silently.** It has to guess the structure from formatting: a line of dialogue becomes narration, a speaker changes without a tag, two scenes merge. The output looks complete and is wrong. A human reading a structured export is slow, but not wrong.
+**A script on prose fails silently.** It has to guess the structure from formatting: a line of dialogue becomes narration, a speaker changes without a tag, two scenes merge. The output looks complete and is wrong. That is why the fast path is a shortcut, never the high-precision path: every extracted line is checked against the source. A human reading a structured export is slow, but not wrong.
 
 ---
 
@@ -89,12 +89,12 @@ You need one thing out of the copy they own: **a plain text file where each line
 tag, grouped by scene.** Any tool that produces that shape is fine.
 
 **Try it yourself, once, inside a time box.** About ten minutes, public tools only — for KiriKiri that
-is usually GARbro to open the archive and FreeMote to decompile a `.ks.scn` script. Prepare the folder
+is usually one chain: GARbro to open the archive, FreeMote to decompile a `.ks.scn` script. Prepare the folder
 yourself and hand the user at most one action. If their answer to "what can you do" was `none`, hand
 them nothing and do the work or take the fallback.
 
-**One attempt means one tool, one pass.** If it fails, or a stop sign appears, stop there: do not fetch
-a second tool, do not try the next layer, do not come back with a better idea. Digging deeper into one
+**One attempt means one toolchain, one pass.** If it fails, or a stop sign appears, stop there: do not fetch
+a second toolchain, do not try the next layer, do not come back with a better idea. Digging deeper into one
 copy is what the limit is for. Looking somewhere else for text is a different move, and it has no limit.
 
 **The three stop signs, all cheap to see:**
@@ -161,7 +161,7 @@ Read the flag, not the prose. It is far more reliable than hunting for quotation
 
 Reason: a model reading a 2-million-character script is slow, expensive, and **prone to summarizing** — which is exactly what this method forbids.
 
-**In tier ④, if the material is prose, read it in chunks — see Two paths at the top.** A single pass over a two-million-character novel is a summary by another name.
+**In tier ④, if the material is prose, read it in chunks — see Three paths at the top.** A single pass over a two-million-character novel is a summary by another name.
 
 ### A downloaded script is often second-hand
 
@@ -204,7 +204,7 @@ id<TAB>speaker<TAB>line<TAB>source<TAB>class
 
 **This one table solves five problems at once:**
 
-- line numbers exist → satisfies "every line carries its source"
+- line numbers exist → satisfies "every sampled line carries its source"
 - the two classes are already split → satisfies "split the material"
 - narration is already split into in-scene and mention → satisfies "locate narration about them"
 - scene boundaries exist → satisfies "cut by scene"
@@ -229,7 +229,7 @@ Do not paraphrase. Do not rewrite. Do not merge adjacent lines.
 If you cannot decide the speaker, leave it empty and append "UNSURE" at the end of the line.
 ```
 
-**Every "UNSURE" line is omitted. Never assign it to the protagonist by default** — that is how a narrator's voice leaks into the character.
+**Every line whose speaker is UNSURE is omitted. Never assign it to the protagonist by default** — that is how a narrator's voice leaks into the character. A conflict between two sourced readings is a different mark: keep both in the working table, and neither enters the soul until the user decides.
 
 **The user cannot waive this by asking for more.** "Use everything" changes what they want, not what the line can support. Keep it in the working notes with the reason, tell them the soul will be thinner because of it, and move on. A line attributed by tone is still a guess, even when the tone is convincing.
 
@@ -291,7 +291,7 @@ mentions while he or she is absent      → evidence about his or her reputation
 ② mention     → only as a note beside a scene, marked "mentioned elsewhere"
 ```
 
-**If a mention contradicts the in-scene narration, keep both and mark UNSURE.** Do not average them.
+**If a mention contradicts the in-scene narration, keep both in the working table and mark the conflict UNSURE.** Do not average them, and do not put either in the soul until the user decides.
 
 ### In-scene narration will contain material about other characters too
 
@@ -317,7 +317,7 @@ Do not try to filter this out mechanically. Three options, and the third is the 
 
 ---
 
-## What the four piles look like once the table exists
+## What the two piles look like once the table exists
 
 ```
 he or she said  → the piles about speech, catchphrases, how I talk

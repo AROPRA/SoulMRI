@@ -13,12 +13,12 @@ Game package?        Ren'Py / KiriKiri / NScripter → unpack and read (case 1, 
 Complete script?     「台本」「脚本」「字幕」「台词集」 → case 1
 Anime?               subtitle files can be extracted → case 1
 Novel?               the original text is usually online → case 1
-Manga only?          images; a page can be OCR'd, but not attributed → stay in case 2
+Manga only?          images; a page can be turned into text, but not attributed — do not OCR → stay in case 2
 ```
 
-**If any of the first four exists, switch to case 1 and use its two paths.** Do not build a soul from descriptions when the script is one search away. Search for the work's original medium (novel / manga / anime / game), not only for the character's name.
+**If any of the first four exists, switch to case 1 and use its three paths.** Do not build a soul from descriptions when the script is one search away. Search for the work's original medium (novel / manga / anime / game), not only for the character's name.
 
-**Never read scans, and never OCR pages.** A page can be turned into text, but not into a conversation: the speaker lives in the drawing, not in the characters. Scanned dialogue comes out as an unattributed stream, and every line then has to be attributed by guess — which is the one failure this method exists to prevent. If the user offers scans, decline in one sentence and go back to route 2. If the material is a manga and nothing else, the honest answer is that the soul will be thin; it is not a reason to invent a reading path.
+**Never read scans, and never OCR a page of dialogue.** A page can be turned into text, but not into a conversation: the speaker lives in the drawing, not in the characters. Scanned dialogue comes out as an unattributed stream, and every line then has to be attributed by guess — which is the one failure this method exists to prevent. If the user offers scans, decline in one sentence and go back to route 2. If the material is a manga and nothing else, the honest answer is that the soul will be thin; it is not a reason to invent a reading path.
 
 **The upgrade is automatic.** The user does not need to know the four cases; if the material turns out to be a full source, move to case 1 and say so.
 
@@ -26,11 +26,11 @@ Manga only?          images; a page can be OCR'd, but not attributed → stay in
 
 ## The governing rule
 
-Every source online falls into one of four classes. Keep them apart or the result is worthless:
+Every source online falls into one of three classes. Keep them apart or the result is worthless:
 
 ```
 Original words     what he or she actually said, or the official script   → body text only
-Official setting   officially authored third-person description     → identity facts for 我是谁; never a verdict
+Official setting   officially authored third-person description     → identity facts for 我是谁 (facts only, never quoted); never a verdict
 Fan work           fanfiction, analysis, memes, wiki summaries      → not used at all
 ```
 
@@ -118,7 +118,7 @@ A minor character has almost nothing online — but what exists tends to be the 
 
 **If thirty minutes of searching yields fewer than three lines he or she actually said, stop.**
 
-That usually means the work has no decent text preservation online. Either choose another character, or drop to case 3 — **do not assemble a soul from second-hand description.** A card built from descriptions will read like a summary of him or her, which is precisely the acting voice this method exists to avoid.
+That usually means the work has no decent text preservation online. Either choose another character, or drop to case 3 with the user's agreement, by route number — **do not assemble a soul from second-hand description.** A card built from descriptions will read like a summary of him or her, which is precisely the acting voice this method exists to avoid.
 
 ---
 
@@ -133,7 +133,7 @@ The same 「勝手にしろ」 becomes "whatever you want," "do as you like," or
 ```
 Original available        → the original governs; translation only as reference
 Translation only          → mark the body "（translated）" and record which translation
-Translations disagree     → keep both, mark UNSURE, let the user decide
+Translations disagree     → keep both in the working notes, mark UNSURE; the user chooses, and only the chosen version enters the soul
 ```
 
 **The "how I talk" section suffers most here.** Translations routinely level out rudeness, pauses and honorific levels.
@@ -206,7 +206,7 @@ User: "He or she acts this way in this situation"        → useful, goes to evi
 User: "I think he or she'd say something like this"      → NOT a quote. Does not enter the body.
 ```
 
-**A separate section called "What I remember of him or her"** may hold the user's memories — first person, but the subject is the *user* ("I remember him or her saying…"). Never mixed into the body.
+**Keep the user's memories in the working notes**, marked as the user's ("I remember him or her saying…"). They may point to a scene or a line to look for; they never become a section of the soul, and they are never mixed into the body.
 
 ---
 
@@ -214,7 +214,7 @@ User: "I think he or she'd say something like this"      → NOT a quote. Does n
 
 Online material is second-hand by nature, so the evidence is thinner and fan material inflates confidence beyond what it can support. The rule is qualitative: state only what two sources, a recording, or a verbatim transcription supports, and omit the rest. The blank at the end does not grow to compensate — it stays one line.
 
-**A case-2 soul is often half the length of a case-1 soul.** That is the evidence, not a writing failure. Do not pad with descriptions to match the length of a script-based soul.
+**A case-2 soul is often shorter than a case-1 soul — on a thin web trail, about half.** That is the evidence, not a writing failure. Do not pad with descriptions to match the length of a script-based soul.
 
 ## Advancing life
 
