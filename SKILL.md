@@ -19,6 +19,7 @@ metadata:
 > 有心陪TA一起长大的，留下来；这会花点时间，大约二十分钟，中间要你划、你改、你认。不愿意的，现在就可以走——这不是五分钟能做完的事，我不骗您。
 
 **One line: don't write a character. Find what he or she already said.**
+**用词约定：** 写中文说明时用「规则」，不用「规矩」——同一个意思，后者读起来像机器端着架子说话。
 
 > **Start in a fresh session — and tell the user so before anything else.**
 > An old draft, a previous soul, or a long conversation about this character sits in the context and starts acting as a source. The model then quotes its own earlier text — confidently, and with citations that look real — and every later check confirms the same error. If a draft exists, keep it as a file to diff against; do not paste it into the working context.
